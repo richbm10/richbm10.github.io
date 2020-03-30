@@ -1,6 +1,4 @@
 
-@import "../images.css";
-@import "../global.css";
 @import "../components/blog-post-card.css";
 @import "../pages/index.css";
 
@@ -14,12 +12,29 @@ body {
     "ft ft ft";
 }
 
+.next-pages-text {
+  margin: 1% 0% 1% 0%;
+}
+
 #main-content {
   grid-area: 1/2/2/3;
-  display: flex;
+  display: grid;
+  margin: 0;
+  
+  grid-template-rows: 1fr 100px;
+}
+
+#blog-posts {
+  grid-area: 1/1/2/2;
   flex-flow: row wrap;
+}
+
+#next-pages {
+  grid-area: 2/1/3/2;
+  color: rgb(72, 65, 67, 0.85);
+  text-align: center;
   align-items: center;
-  justify-content: center;
+  margin: 1% 0% 1% 0%;
 }
 
 @media(min-width: 750px) {
@@ -31,10 +46,6 @@ body {
   .blog-post-card {
       height: 15vh;
       width: 30vw;
-  }
-
-  .container-top {
-    flex-flow: row nowrap;
   }
 
 }

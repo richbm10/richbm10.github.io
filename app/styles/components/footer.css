@@ -53,7 +53,7 @@
         grid-template-rows: 65% 20% 15%;
     }
 
-    .container-top {
+    .footer-section {
         flex-flow: row nowrap;
     }
   
