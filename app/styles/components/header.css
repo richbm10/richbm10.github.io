@@ -24,7 +24,16 @@
 }
 
 #logo {
-    width: 174px;
+    width: 120px;
     height: 33px;
     margin-left: 2%;
 }
+
+@media(min-width: 1000px) {
+
+    #logo {
+        width: 174px;
+    }
+    
+  }
+  
