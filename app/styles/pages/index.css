@@ -9,7 +9,7 @@ body {
     height: 100vh;
     margin: 0;
     
-    grid-template-columns: 1fr 70vw 1fr;
+    grid-template-columns: 1fr 90vw 1fr;
     grid-template-rows: 64px 1fr 236px;
   
     grid-template-areas: 
