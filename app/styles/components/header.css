@@ -5,11 +5,9 @@
     background: #484143;
 
     display: grid;
-    height: 64px;
     margin: 0;
   
     grid-template-columns: 1fr 90vw 1fr;
-    grid-template-rows: 64px;
 }
 
 .header-nav-button {
@@ -19,7 +17,6 @@
 
 #header-content {
     grid-area: 1/2/2/3;
-    height: 64px;
     justify-content: space-between;
 }
 
@@ -29,11 +26,11 @@
     margin-left: 2%;
 }
 
-@media(min-width: 1000px) {
 
+
+@media(min-width: 750px) {
     #logo {
         width: 174px;
     }
-    
-  }
-  
+
+}

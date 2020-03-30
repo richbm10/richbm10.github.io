@@ -5,12 +5,12 @@
     background: #484143;
     color: #ffffff;
 
+    height: 350px;
     display: grid;
-    height: 236px;
     margin: 0;
   
     grid-template-columns: 1fr 90vw 1fr;
-    grid-template-rows: 65% 20% 15%;
+    grid-template-rows: 80% 10% 10%;
 }
 
 .footer-nav-button {
@@ -27,15 +27,10 @@
     width: 16px;
     height: 16px;
     flex-shrink: 1;
-    margin: 10%;
-}
-
-#social-media {
-    justify-content: space-evenly;
+    margin: 5% 10% 5% 10%;
 }
 
 #footer-content {
-    padding-top: 2%;
     grid-area: 1/2/2/3;
     justify-content: space-between;
 }
@@ -50,3 +45,13 @@
     height: 0.25px;
     width: 90vw;
 }
+
+@media(min-width: 750px) {
+
+    .footer {
+        height: 236px;
+        grid-template-rows: 65% 20% 15%;
+    }
+  
+}
+  

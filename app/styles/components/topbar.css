@@ -5,11 +5,9 @@
   background: #ECB177;
 
   display: grid;
-  height: 67px;
   margin: 0;
   
   grid-template-columns: 1fr 90vw 1fr;
-  grid-template-rows: 67px;
 }
 
 .topbar-icon {
@@ -26,7 +24,6 @@
 
 #topbar-content {
   grid-area: 1/2/2/3;
-  height: 67px;
   justify-content: space-evenly;
 }
 
@@ -48,3 +45,4 @@
   width: 80%;
   margin-left: 2%;
 }
+
