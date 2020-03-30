@@ -136,7 +136,7 @@
 }
 
 #comment-label {
-    width: 80px;
+    width: 60px;
 }
 
 #comments {
@@ -167,6 +167,10 @@
   }
 
 @media(min-width: 1000px) {
+
+    #comment-label {
+        width: 80px;
+    }
 
     #post-image {
         height: 35vh;
