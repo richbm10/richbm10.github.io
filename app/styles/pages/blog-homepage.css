@@ -1,8 +1,8 @@
 
 @import "../images.css";
+@import "../global.css";
 @import "../components/blog-post-card.css";
 @import "../pages/index.css";
-@import "../global.css";
 
 body {
   grid-template-rows: 34px 37px 1fr 1fr;
