@@ -1,8 +1,6 @@
-
-@import "../components/blog-post-card.css";
+@import "../global.css";
 @import "../pages/index.css";
-
-
+@import "../components/blog-post-card.css";
 .social-media {
     justify-content: space-between;
 }
@@ -61,17 +59,19 @@
     line-height: 1.25em;
 }
 
-.blog-post-card {
-    width: 25vw;
+.card-text {
+    font-size: 0.85em;
+    text-align: center;
+    margin-top: 2%;
+}
+
+.card-img {
+    height: 17vh;
+    width: 23vw;
 }
 
 .card-content {
-    top: 70%;
-    height: 30%;
-}
-
-.card-text {
-    font-size: 0.85em;
+    width: 20vw;
 }
 
 #post-image {
@@ -93,8 +93,10 @@
 }
 
 #caption-content {
-    color: white;
-    font-style: normal;
+    color: rgb(72, 65, 67, 0.50);
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
 }
 
 #share-icon {
@@ -144,8 +146,8 @@
 }
 
 #navigate-next-icon {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
 }
 
 #dropdown-icon {
@@ -153,65 +155,73 @@
     height: 30px;
 }
 
-@media(min-width: 750px) {
+#related-posts {
+    position: relative;
+    left: -3%;
+}
 
-    .card-content {
-        top: 80%;
-        height: 20%;
+@media(min-width: 370px) {
+    .card-img {
+        height: 15vh;
+        width: 24vw;
     }
-    
+    .card-content {
+        width: 24vw;
+    }
+}
+
+@media(min-width: 750px) {
+    body {
+        grid-template-rows: 44px 1fr 1fr;
+    }
     .card-text {
         font-size: 1em;
     }
-  
-  }
+    .card-img {
+        height: 12vh;
+        width: 22vw;
+    }
+    .card-content {
+        width: 22vw;
+    }
+}
 
 @media(min-width: 1000px) {
-
     #comment-label {
         width: 80px;
     }
-
     #post-image {
         height: 35vh;
     }
-
     .red-bubble {
         height: 3vh;
     }
-    
     .blue-a-bubble {
         height: 3vh;
     }
-    
     .blue-b-bubble {
         height: 3vh;
     }
-    
     .blue-c-bubble {
         height: 3vh;
     }
-
-    .blog-post-card {
-
-        height: 20vh;
-    } 
-
 }
 
 @media(min-width: 1500px) {
-
+    body {
+        grid-template-rows: 64px 1fr 236px;
+    }
     #post-image {
         height: 55vh;
     }
-
-    .blog-post-card {
-        height: 30vh;
-    }
-
     .card-text {
         font-size: 1.5em;
     }
-
+    .card-img {
+        height: 25vh;
+        width: 25vw;
+    }
+    .card-content {
+        width: 25vw;
+    }
 }
-

@@ -1,97 +1,83 @@
 <!DOCTYPE html>
 
 <html>
-    <head>
-        <meta charset="UTF-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-        <link rel="stylesheet" href="../styles/pages/blog-post.css"/>
-        <title>The Web Development Dictionary</title>
-    </head>
 
-    <body>
-        <header class="header">
-            <div id="header-content" class="container">
-                <object type="image/svg+xml" data="../../assets/images/Logo-Maynooth-Option1.svg" id="logo"></object>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <link rel="stylesheet" href="../styles/pages/blog-post.css" />
+    <title>The Web Development Dictionary</title>
+</head>
 
-                <div class="container-right">
+<body>
+    <div class="nav-bar">
+        <div id="nav-bar-content" class="container">
+            <object type="image/svg+xml" data="../../assets/images/Logo-Maynooth-Option1.svg" id="logo"></object>
 
-                    <a class="header-nav-button">ABOUT</a>
+            <ul class="nav-buttons container-right">
+                <li class="nav-button"><a>ABOUT</a></li>
+                <li class="nav-button"><a href="../../index.html">HOME</a></li>
+                <li class="nav-button"><a>SUBSCRIBE</a></li>
+            </ul>
+        </div>
+    </div>
 
-                    <a class="header-nav-button" href="../../index.html">BLOG</a>
+    <main class="main">
+        <article id="main-content">
 
-                    <a class="header-nav-button">SUBSCRIBE</a>
+            <cite>
+                <a href="https://www.pexels.com/photo/woman-in-black-and-white-polka-dots-dress-using-silver-laptop-3783824/" rel="noopener" target="_blank">
+                    <img id="post-image" src="../../assets/images/desk-img-6.jpg" class="card-img" />
+                    <figcaption id="caption-content">Photo by Andrea Piacquadio from Pexels</figcaption>
+                </a>
+            </cite>
 
-                </div>
-            </div>
-        </header>
+        </article>
+    </main>
 
-        <main class="main">
-            <article id="main-content">
-                
-                <div id="post-image" class="card img-post-6">
-                    <div id="post-image-caption" class="container">
-                        <cite>
-                            <a id="caption-content" href="https://www.pexels.com/photo/woman-in-black-and-white-polka-dots-dress-using-silver-laptop-3783824/" rel="noopener" target="_blank">
-                                Photo by Andrea Piacquadio from Pexels
-                            </a>
-                        </cite>
-                    </div>
-                </div>
+    <footer class="footer">
+        <div id="footer-content" class="container-top footer-section">
 
-            </article>
-        </main>
+            <div class="container-top footer-section">
+                <span>NEWEST ARTICLES</span>
 
-        <footer class="footer">
-            <div id="footer-content" class="container-top footer-section">
-
-                <div class="container-top footer-section">
-                    <span>NEWEST ARTICLES</span>
-
-                    <p class="footer-paragraph">
-                        12 Essential Advantages of Java <br />
-                        How to Land Your First Web Design <br />
-                        The Best Way to Learn Development
-                        in 2020 <br />
-                        17 Typescript Projects You Can Build to
-                        Perfect Your Coding Skills
-                    </p>
-                </div>
-
-                <div class="container-top footer-section">
-                    <span>FREE CODING GUIDE</span>
-
-                    <p class="footer-paragraph">
-                        What is Coding? <br />
-                        Intro to Software Programming <br />
-                        What is Front-End and Back-End? <br />
-                        How does HTTP Work? <br />
-                        Useful Tools for Coding
-                    </p>
-                </div>
-
-                <div class="container-left">
-                    <object type="image/svg+xml" data="../../assets/icons/iconmonstr-facebook-1.svg" class="footer-icon"></object>
-
-                    <object type="image/svg+xml" data="../../assets/icons/iconmonstr-linkedin-3.svg" class="footer-icon"></object>
-
-                    <object type="image/svg+xml" data="../../assets/icons/iconmonstr-twitter-1.svg" class="footer-icon"></object>
-                </div>
-
+                <p class="footer-paragraph">
+                    12 Essential Advantages of Java <br /> How to Land Your First Web Design <br /> The Best Way to Learn Development in 2020 <br /> 17 Typescript Projects You Can Build to Perfect Your Coding Skills
+                </p>
             </div>
 
-            <div id="footer-nav" class="container-left">
+            <div class="container-top footer-section">
+                <span>FREE CODING GUIDE</span>
 
-                <a class="footer-nav-button">ABOUT</a>
-
-                <a class="footer-nav-button">PERMISSIONS</a>
-
-                <a class="footer-nav-button">PRIVACY</a>
-
-                <a class="footer-nav-button">CREDITS</a>
-
+                <p class="footer-paragraph">
+                    What is Coding? <br /> Intro to Software Programming <br /> What is Front-End and Back-End? <br /> How does HTTP Work? <br /> Useful Tools for Coding
+                </p>
             </div>
 
-            <hr id="line"/>
-        </footer>
-    </body>
+            <div class="container-left">
+                <object type="image/svg+xml" data="../../assets/icons/iconmonstr-facebook-1.svg" class="footer-icon"></object>
+
+                <object type="image/svg+xml" data="../../assets/icons/iconmonstr-linkedin-3.svg" class="footer-icon"></object>
+
+                <object type="image/svg+xml" data="../../assets/icons/iconmonstr-twitter-1.svg" class="footer-icon"></object>
+            </div>
+
+        </div>
+
+        <ul id="footer-nav" class="nav-buttons container-left">
+
+            <li class="nav-button"><a>ABOUT</a></li>
+
+            <li class="nav-button"><a>PERMISSIONS</a></li>
+
+            <li class="nav-button"><a>PRIVACY</a></li>
+
+            <li class="nav-button"><a>CREDITS</a></li>
+
+        </ul>
+
+        <hr id="line" />
+    </footer>
+</body>
+
 </html>

@@ -1,21 +1,12 @@
-
-
 .footer {
     grid-area: ft;
     background: #484143;
     color: #ffffff;
-
     height: 350px;
     display: grid;
     margin: 0;
-  
     grid-template-columns: 1fr 90vw 1fr;
     grid-template-rows: 80% 10% 10%;
-}
-
-.footer-nav-button {
-    margin: 1%;
-    color: #ffffff;
 }
 
 .footer-paragraph {
@@ -37,7 +28,7 @@
 
 #footer-nav {
     grid-area: 2/2/3/3;
-    margin-left: -0.50%;
+    padding: 0%;
 }
 
 #line {
@@ -47,15 +38,11 @@
 }
 
 @media(min-width: 750px) {
-
     .footer {
         height: 236px;
         grid-template-rows: 65% 20% 15%;
     }
-
     .footer-section {
         flex-flow: row nowrap;
     }
-  
 }
-  

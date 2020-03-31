@@ -1,367 +1,331 @@
 <!DOCTYPE html>
 
 <html>
-    <head>
-        <meta charset="UTF-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-        <link rel="stylesheet" href="../styles/pages/blog-post.css"/>
-        <title>Designing Wireframes for Beginners</title>
-    </head>
 
-    <body>
-        <header class="header">
-            <div id="header-content" class="container">
-                <object type="image/svg+xml" data="../../assets/images/Logo-Maynooth-Option1.svg" id="logo"></object>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <link rel="stylesheet" href="../styles/pages/blog-post.css" />
+    <title>Designing Wireframes for Beginners</title>
+</head>
 
-                <div class="container-right">
+<body>
+    <div class="nav-bar">
+        <div id="nav-bar-content" class="container">
+            <object type="image/svg+xml" data="../../assets/images/Logo-Maynooth-Option1.svg" id="logo"></object>
 
-                    <a class="header-nav-button">ABOUT</a>
+            <ul class="nav-buttons container-right">
+                <li class="nav-button"><a>ABOUT</a></li>
+                <li class="nav-button"><a href="../../index.html">HOME</a></li>
+                <li class="nav-button"><a>SUBSCRIBE</a></li>
+            </ul>
+        </div>
+    </div>
 
-                    <a class="header-nav-button" href="../../index.html">BLOG</a>
+    <main class="main">
+        <article id="main-content">
+            <div id="front">
+                <h1 id="post-title">Designing Wireframes for Beginners</h1>
 
-                    <a class="header-nav-button">SUBSCRIBE</a>
+                <div class="container-left">
+                    <object type="image/svg+xml" data="../../assets/icons/account_circle-24px-gray.svg" id="author-avatar"></object>
 
+                    <span id="update-date"><i><u>Ricardo Schnaider</u> <br /> Last Updated Nov 2, 2020 | Learn UX/UI</i></span>
                 </div>
-            </div>
-        </header>
 
-        <main class="main">
-            <article id="main-content">
-                <div id="front">
-                    <h1 id="post-title">Designing Wireframes for Beginners</h1>
+                <cite>
+                    <a href="https://www.pexels.com/photo/space-grey-apple-iphone-on-notebook-page-2388936/" rel="noopener" target="_blank">
+                        <img id="post-image" src="../../assets/images/desk-img-2.jpg" class="card-img" />
+                        <figcaption id="caption-content">Photo by Jonathan Robles from Pexels</figcaption>
+                    </a>
+                </cite>
 
-                    <div class="container-left">
-                        <object type="image/svg+xml" data="../../assets/icons/account_circle-24px-gray.svg" id="author-avatar"></object>
-
-                        <span id="update-date"><i><u>Ricardo Schnaider</u> <br /> Last Updated Nov 2, 2020 | Learn UX/UI</i></span>
-                    </div>
-
-                    <div id="post-image" class="card img-post-2">
-                        <div id="post-image-caption" class="container">
-                            <cite>
-                                <a id="caption-content" href="https://www.pexels.com/photo/space-grey-apple-iphone-on-notebook-page-2388936/" rel="noopener" target="_blank">
-                                    Photo by Jonathan Robles from Pexels
-                                </a>
-                            </cite>
-                        </div>
-                    </div>
-
-                    <p id="biography"><i>
+                <p id="biography"><i>
                         Ricardo Schnaider is an actual Full Stack Developer in <b>DevApps S.A</b>. In 2016, he achieved its master degree
                         of Cloud Computing in <q>Oxford Univesity</q>; which then he worked there as a professor during 3 years. So, nowadays
                         he is part of the development of distributed systems in <b>DevApps S.A</b>, whose major client is the <q>Government of Costa Rica</q>.
                     </i></p>
 
-                </div>
-                
-                <di id="article-content">
-                    <div class="container social-media">
-                        <div class="container-left">
-                            <a class="bubble">
-                                <button class="red-bubble container">
+            </div>
+
+            <di id="article-content">
+                <div class="container social-media">
+                    <div class="container-left">
+                        <a class="bubble">
+                            <button class="red-bubble container">
                                     <object type="image/svg+xml" data="../../assets/icons/iconmonstr-pinterest-3.svg" class="icon"></object>
                                 </button>
-                            </a>
+                        </a>
 
-                            <a class="bubble">
-                                <button class="blue-a-bubble container">
+                        <a class="bubble">
+                            <button class="blue-a-bubble container">
                                     <object type="image/svg+xml" data="../../assets/icons/iconmonstr-facebook-1.svg" class="icon"></object>
                                 </button>
-                            </a>
+                        </a>
 
-                            <a class="bubble">
-                                <button class="blue-b-bubble container">
+                        <a class="bubble">
+                            <button class="blue-b-bubble container">
                                     <object type="image/svg+xml" data="../../assets/icons/iconmonstr-linkedin-3.svg" class="icon"></object>
                                 </button>
-                            </a>
+                        </a>
 
-                            <a class="bubble">
-                                <button class="blue-c-bubble container">
+                        <a class="bubble">
+                            <button class="blue-c-bubble container">
                                     <object type="image/svg+xml" data="../../assets/icons/iconmonstr-twitter-1.svg" class="icon"></object>
                                 </button>
-                            </a>
-                        </div>
-
-                        <div class="container">
-                            <object type="image/svg+xml" data="../../assets/icons/share-24px.svg" id="share-icon"></object>
-
-                            <span><b>9K<br/>Shares</b></span>
-                        </div>
+                        </a>
                     </div>
 
-                    <section class="content-section">
-                        <h2>Define the Information Architecture</h2>
+                    <div class="container">
+                        <object type="image/svg+xml" data="../../assets/icons/share-24px.svg" id="share-icon"></object>
 
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent aliquam feugiat lacus a elementum. Vestibulum aliquam ullamcorper 
-                            sem vel dignissim. Nullam accumsan ex magna, ut accumsan nibh ultricies varius. Maecenas sed sapien lorem. Quisque a orci imperdiet,
-                            euismod diam quis, volutpat tellus. Mauris aliquam arcu <q>vel lectus placerat</q>, ut rhoncus quam rutrum. Maecenas euismod nec nunc
-                            quis fermentum. Sed sed nibh ut orci pellentesque egestas in non lorem. Nam pharetra pulvinar posuere. Sed vel enim neque. 
-                            Suspendisse feugiat, elit fringilla cursus eleifend, ante neque laoreet purus, eget tempor nisi mi a nibh. In hac habitasse platea dictumst.
-                        </p>
-
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent aliquam feugiat lacus a elementum. Vestibulum aliquam ullamcorper 
-                            sem vel dignissim. Nullam accumsan ex magna, ut accumsan nibh ultricies varius. Maecenas sed sapien lorem. Quisque a orci imperdiet,
-                            euismod diam quis, volutpat tellus. Mauris aliquam arcu vel lectus placerat, ut rhoncus quam rutrum. Maecenas euismod nec nunc
-                            quis fermentum. Sed sed nibh ut orci pellentesque egestas in non lorem. Nam pharetra pulvinar posuere. Sed vel enim neque. 
-                            Suspendisse feugiat, elit fringilla cursus eleifend, ante neque laoreet purus, eget tempor nisi mi a nibh. In hac habitasse platea dictumst.
-                        </p>
-
-                    </section>
-
-                    <section class="content-section">
-                        <h2>Identify the Pages needed based on the Information Architecture</h2>
-
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent aliquam feugiat lacus a elementum. Vestibulum aliquam ullamcorper 
-                            sem vel dignissim. Nullam accumsan ex magna, ut accumsan nibh ultricies varius. Maecenas sed sapien lorem. Quisque a orci imperdiet,
-                            euismod diam quis, volutpat tellus. Mauris aliquam arcu vel lectus placerat, ut rhoncus quam rutrum. Maecenas euismod nec nunc
-                            quis fermentum. Sed sed nibh ut orci pellentesque egestas in non lorem. Nam pharetra pulvinar posuere. Sed vel enim neque. 
-                            Suspendisse feugiat, elit fringilla cursus eleifend, ante neque laoreet purus, eget tempor nisi mi a nibh. In hac habitasse platea dictumst.
-                        </p>
-
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent aliquam feugiat lacus a elementum. Vestibulum aliquam ullamcorper 
-                            sem vel dignissim. Nullam accumsan ex magna, ut accumsan nibh ultricies varius. Maecenas sed sapien lorem. Quisque a orci imperdiet,
-                            euismod diam quis, volutpat tellus. Mauris aliquam arcu vel lectus placerat, ut rhoncus quam rutrum. Maecenas euismod nec nunc
-                            quis fermentum. Sed sed nibh ut orci pellentesque egestas in non lorem. Nam pharetra pulvinar posuere. Sed vel enim neque. 
-                            Suspendisse feugiat, elit fringilla cursus eleifend, ante neque laoreet purus, eget tempor nisi mi a nibh. In hac habitasse platea dictumst.
-                        </p>
-
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent aliquam feugiat lacus a elementum. Vestibulum aliquam ullamcorper 
-                            sem vel dignissim. Nullam accumsan ex magna, ut accumsan nibh ultricies varius. Maecenas sed sapien lorem. Quisque a orci imperdiet,
-                            euismod diam quis, volutpat tellus. Mauris aliquam arcu vel lectus placerat, ut rhoncus quam rutrum. Maecenas euismod nec nunc
-                            quis fermentum. Sed sed nibh ut orci pellentesque egestas in non lorem. Nam pharetra pulvinar posuere. Sed vel enim neque. 
-                            Suspendisse feugiat, elit fringilla cursus eleifend, ante neque laoreet purus, eget tempor nisi mi a nibh. In hac habitasse platea dictumst.
-                        </p>
-                    </section>
-
-                    <section class="content-section">
-                        <h2>Draw the UI Pages and Componentes using Pencils</h2>
-
-                        <section class="content-section">
-                            <h3>Pages</h3>
-
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent aliquam feugiat lacus a elementum. Vestibulum aliquam ullamcorper 
-                                sem vel dignissim. Nullam accumsan ex magna, ut accumsan nibh ultricies varius. Maecenas sed sapien lorem. Quisque a orci imperdiet,
-                                euismod diam quis, volutpat tellus. Mauris aliquam arcu vel lectus placerat, ut rhoncus quam rutrum. Maecenas euismod nec nunc
-                                quis fermentum. Sed sed nibh ut orci pellentesque egestas in non lorem. Nam pharetra pulvinar posuere. Sed vel enim neque. 
-                                Suspendisse feugiat, elit fringilla cursus eleifend, ante neque laoreet purus, eget tempor nisi mi a nibh. In hac habitasse platea dictumst.
-                            </p>
-                        </section>
-
-                        <section class="content-section">
-                            <h3>Components</h3>
-
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent aliquam feugiat lacus a elementum. Vestibulum aliquam ullamcorper 
-                                sem vel dignissim. Nullam accumsan ex magna, ut accumsan nibh ultricies varius. Maecenas sed sapien lorem. Quisque a orci imperdiet,
-                                euismod diam quis, volutpat tellus. Mauris aliquam arcu vel lectus placerat, ut rhoncus quam rutrum. Maecenas euismod nec nunc
-                                quis fermentum. Sed sed nibh ut orci pellentesque egestas in non lorem. Nam pharetra pulvinar posuere. Sed vel enim neque. 
-                                Suspendisse feugiat, elit fringilla cursus eleifend, ante neque laoreet purus, eget tempor nisi mi a nibh. In hac habitasse platea dictumst.
-                            </p>
-
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent aliquam feugiat lacus a elementum. Vestibulum aliquam ullamcorper 
-                                sem vel dignissim. Nullam accumsan ex magna, ut accumsan nibh ultricies varius. Maecenas sed sapien lorem. Quisque a orci imperdiet,
-                                euismod diam quis, volutpat tellus. Mauris aliquam arcu vel lectus placerat, ut rhoncus quam rutrum. Maecenas euismod nec nunc
-                                quis fermentum. Sed sed nibh ut orci pellentesque egestas in non lorem. Nam pharetra pulvinar posuere. Sed vel enim neque. 
-                                Suspendisse feugiat, elit fringilla cursus eleifend, ante neque laoreet purus, eget tempor nisi mi a nibh. In hac habitasse platea dictumst.
-                            </p>
-                        </section>
-
-                    </section>
-
-                    <section class="content-section">
-                        <h2>Define the Application Flow based on the Information Architecture and the UI Pages/Components Drawed</h2>
-
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent aliquam feugiat lacus a elementum. Vestibulum aliquam ullamcorper 
-                            sem vel dignissim. Nullam accumsan ex magna, ut accumsan nibh ultricies varius. Maecenas sed sapien lorem. Quisque a orci imperdiet,
-                            euismod diam quis, volutpat tellus. Mauris aliquam arcu vel lectus placerat, ut rhoncus quam rutrum. Maecenas euismod nec nunc
-                            quis fermentum. Sed sed nibh ut orci pellentesque egestas in non lorem. Nam pharetra pulvinar posuere. Sed vel enim neque. 
-                            Suspendisse feugiat, elit fringilla cursus eleifend, ante neque laoreet purus, eget tempor nisi mi a nibh. In hac habitasse platea dictumst.
-                        </p>
-
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent aliquam feugiat lacus a elementum. Vestibulum aliquam ullamcorper 
-                            sem vel dignissim. Nullam accumsan ex magna, ut accumsan nibh ultricies varius. Maecenas sed sapien lorem. Quisque a orci imperdiet,
-                            euismod diam quis, volutpat tellus. Mauris aliquam arcu vel lectus placerat, ut rhoncus quam rutrum. Maecenas euismod nec nunc
-                            quis fermentum. Sed sed nibh ut orci pellentesque egestas in non lorem. Nam pharetra pulvinar posuere. Sed vel enim neque. 
-                            Suspendisse feugiat, elit fringilla cursus eleifend, ante neque laoreet purus, eget tempor nisi mi a nibh. In hac habitasse platea dictumst.
-                        </p>
-
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent aliquam feugiat lacus a elementum. Vestibulum aliquam ullamcorper 
-                            sem vel dignissim. Nullam accumsan ex magna, ut accumsan nibh ultricies varius. Maecenas sed sapien lorem. Quisque a orci imperdiet,
-                            euismod diam quis, volutpat tellus. Mauris aliquam arcu vel lectus placerat, ut rhoncus quam rutrum. Maecenas euismod nec nunc
-                            quis fermentum. Sed sed nibh ut orci pellentesque egestas in non lorem. Nam pharetra pulvinar posuere. Sed vel enim neque. 
-                            Suspendisse feugiat, elit fringilla cursus eleifend, ante neque laoreet purus, eget tempor nisi mi a nibh. In hac habitasse platea dictumst.
-                        </p>
-                    </section>
-
-                    <div class="container social-media">
-                        <div class="container-left">
-                            <a class="bubble">
-                                <button class="red-bubble container">
-                                    <object type="image/svg+xml" data="../../assets/icons/iconmonstr-pinterest-3.svg" class="icon"></object>
-                                </button>
-                            </a>
-
-                            <a class="bubble">
-                                <button class="blue-a-bubble container">
-                                    <object type="image/svg+xml" data="../../assets/icons/iconmonstr-facebook-1.svg" class="icon"></object>
-                                </button>
-                            </a>
-
-                            <a class="bubble">
-                                <button class="blue-b-bubble container">
-                                    <object type="image/svg+xml" data="../../assets/icons/iconmonstr-linkedin-3.svg" class="icon"></object>
-                                </button>
-                            </a>
-
-                            <a class="bubble">
-                                <button class="blue-c-bubble container">
-                                    <object type="image/svg+xml" data="../../assets/icons/iconmonstr-twitter-1.svg" class="icon"></object>
-                                </button>
-                            </a>
-                        </div>
-
-                        <div class="container">
-                            <object type="image/svg+xml" data="../../assets/icons/share-24px.svg" id="share-icon"></object>
-
-                            <span><b>9K<br/>Shares</b></span>
-                        </div>
-                    </div>
-                </di>
-
-                <div id="comments">
-                    <div class="container-left">
-                        <b id="comment-label">Comments</b>
-
-                        <object type="image/svg+xml" data="../../assets/icons/arrow_drop_down-24px.svg" id="dropdown-icon"></object>
-                    </div>
-
-                    <div class="container-left">
-                        <object type="image/svg+xml" data="../../assets/icons/account_circle-24px-gray.svg" class="avatar"></object>
-    
-                        <di>
-                            <b>Anamarie Zaitz</b>
-
-                            <p class="comment">
-                                The post is excellent, it had all the tips I was looking for. It really helped a lot and even I'm feeling now to motivated again. Thank you!
-                            </p>
-                        </di>
-                    </div>
-
-                    <div class="container-left">
-                        <object type="image/svg+xml" data="../../assets/icons/account_circle-24px-gray.svg" class="avatar"></object>
-    
-                        <di>
-                            <b>Marggaret Stallman</b>
-
-                            <p class="comment">
-                                Very interesting, great job.
-                            </p>
-                        </di>
-                    </div>
-
-                    <div class="container-left">
-                        <object type="image/svg+xml" data="../../assets/icons/account_circle-24px-gray.svg" class="avatar"></object>
-    
-                        <di>
-                            <b>Julia Martínez</b>
-
-                            <p class="comment">
-                                I agree in all that you mentioned in the blog post.
-                            </p>
-                        </di>
+                        <span><b>9K<br/>Shares</b></span>
                     </div>
                 </div>
 
-                <h2>Related Blog Posts</h2>
+                <section class="content-section">
+                    <h2>Define the Information Architecture</h2>
 
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent aliquam feugiat lacus a elementum. Vestibulum aliquam ullamcorper sem vel dignissim. Nullam accumsan ex magna, ut accumsan nibh ultricies varius. Maecenas sed sapien lorem. Quisque a orci
+                        imperdiet, euismod diam quis, volutpat tellus. Mauris aliquam arcu <q>vel lectus placerat</q>, ut rhoncus quam rutrum. Maecenas euismod nec nunc quis fermentum. Sed sed nibh ut orci pellentesque egestas
+                        in non lorem. Nam pharetra pulvinar posuere. Sed vel enim neque. Suspendisse feugiat, elit fringilla cursus eleifend, ante neque laoreet purus, eget tempor nisi mi a nibh. In hac habitasse platea dictumst.
+                    </p>
+
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent aliquam feugiat lacus a elementum. Vestibulum aliquam ullamcorper sem vel dignissim. Nullam accumsan ex magna, ut accumsan nibh ultricies varius. Maecenas sed sapien lorem. Quisque a orci
+                        imperdiet, euismod diam quis, volutpat tellus. Mauris aliquam arcu vel lectus placerat, ut rhoncus quam rutrum. Maecenas euismod nec nunc quis fermentum. Sed sed nibh ut orci pellentesque egestas in non lorem. Nam pharetra pulvinar
+                        posuere. Sed vel enim neque. Suspendisse feugiat, elit fringilla cursus eleifend, ante neque laoreet purus, eget tempor nisi mi a nibh. In hac habitasse platea dictumst.
+                    </p>
+
+                </section>
+
+                <section class="content-section">
+                    <h2>Identify the Pages needed based on the Information Architecture</h2>
+
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent aliquam feugiat lacus a elementum. Vestibulum aliquam ullamcorper sem vel dignissim. Nullam accumsan ex magna, ut accumsan nibh ultricies varius. Maecenas sed sapien lorem. Quisque a orci
+                        imperdiet, euismod diam quis, volutpat tellus. Mauris aliquam arcu vel lectus placerat, ut rhoncus quam rutrum. Maecenas euismod nec nunc quis fermentum. Sed sed nibh ut orci pellentesque egestas in non lorem. Nam pharetra pulvinar
+                        posuere. Sed vel enim neque. Suspendisse feugiat, elit fringilla cursus eleifend, ante neque laoreet purus, eget tempor nisi mi a nibh. In hac habitasse platea dictumst.
+                    </p>
+
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent aliquam feugiat lacus a elementum. Vestibulum aliquam ullamcorper sem vel dignissim. Nullam accumsan ex magna, ut accumsan nibh ultricies varius. Maecenas sed sapien lorem. Quisque a orci
+                        imperdiet, euismod diam quis, volutpat tellus. Mauris aliquam arcu vel lectus placerat, ut rhoncus quam rutrum. Maecenas euismod nec nunc quis fermentum. Sed sed nibh ut orci pellentesque egestas in non lorem. Nam pharetra pulvinar
+                        posuere. Sed vel enim neque. Suspendisse feugiat, elit fringilla cursus eleifend, ante neque laoreet purus, eget tempor nisi mi a nibh. In hac habitasse platea dictumst.
+                    </p>
+
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent aliquam feugiat lacus a elementum. Vestibulum aliquam ullamcorper sem vel dignissim. Nullam accumsan ex magna, ut accumsan nibh ultricies varius. Maecenas sed sapien lorem. Quisque a orci
+                        imperdiet, euismod diam quis, volutpat tellus. Mauris aliquam arcu vel lectus placerat, ut rhoncus quam rutrum. Maecenas euismod nec nunc quis fermentum. Sed sed nibh ut orci pellentesque egestas in non lorem. Nam pharetra pulvinar
+                        posuere. Sed vel enim neque. Suspendisse feugiat, elit fringilla cursus eleifend, ante neque laoreet purus, eget tempor nisi mi a nibh. In hac habitasse platea dictumst.
+                    </p>
+                </section>
+
+                <section class="content-section">
+                    <h2>Draw the UI Pages and Componentes using Pencils</h2>
+
+                    <section class="content-section">
+                        <h3>Pages</h3>
+
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent aliquam feugiat lacus a elementum. Vestibulum aliquam ullamcorper sem vel dignissim. Nullam accumsan ex magna, ut accumsan nibh ultricies varius. Maecenas sed sapien lorem. Quisque a orci
+                            imperdiet, euismod diam quis, volutpat tellus. Mauris aliquam arcu vel lectus placerat, ut rhoncus quam rutrum. Maecenas euismod nec nunc quis fermentum. Sed sed nibh ut orci pellentesque egestas in non lorem. Nam pharetra
+                            pulvinar posuere. Sed vel enim neque. Suspendisse feugiat, elit fringilla cursus eleifend, ante neque laoreet purus, eget tempor nisi mi a nibh. In hac habitasse platea dictumst.
+                        </p>
+                    </section>
+
+                    <section class="content-section">
+                        <h3>Components</h3>
+
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent aliquam feugiat lacus a elementum. Vestibulum aliquam ullamcorper sem vel dignissim. Nullam accumsan ex magna, ut accumsan nibh ultricies varius. Maecenas sed sapien lorem. Quisque a orci
+                            imperdiet, euismod diam quis, volutpat tellus. Mauris aliquam arcu vel lectus placerat, ut rhoncus quam rutrum. Maecenas euismod nec nunc quis fermentum. Sed sed nibh ut orci pellentesque egestas in non lorem. Nam pharetra
+                            pulvinar posuere. Sed vel enim neque. Suspendisse feugiat, elit fringilla cursus eleifend, ante neque laoreet purus, eget tempor nisi mi a nibh. In hac habitasse platea dictumst.
+                        </p>
+
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent aliquam feugiat lacus a elementum. Vestibulum aliquam ullamcorper sem vel dignissim. Nullam accumsan ex magna, ut accumsan nibh ultricies varius. Maecenas sed sapien lorem. Quisque a orci
+                            imperdiet, euismod diam quis, volutpat tellus. Mauris aliquam arcu vel lectus placerat, ut rhoncus quam rutrum. Maecenas euismod nec nunc quis fermentum. Sed sed nibh ut orci pellentesque egestas in non lorem. Nam pharetra
+                            pulvinar posuere. Sed vel enim neque. Suspendisse feugiat, elit fringilla cursus eleifend, ante neque laoreet purus, eget tempor nisi mi a nibh. In hac habitasse platea dictumst.
+                        </p>
+                    </section>
+
+                </section>
+
+                <section class="content-section">
+                    <h2>Define the Application Flow based on the Information Architecture and the UI Pages/Components Drawed</h2>
+
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent aliquam feugiat lacus a elementum. Vestibulum aliquam ullamcorper sem vel dignissim. Nullam accumsan ex magna, ut accumsan nibh ultricies varius. Maecenas sed sapien lorem. Quisque a orci
+                        imperdiet, euismod diam quis, volutpat tellus. Mauris aliquam arcu vel lectus placerat, ut rhoncus quam rutrum. Maecenas euismod nec nunc quis fermentum. Sed sed nibh ut orci pellentesque egestas in non lorem. Nam pharetra pulvinar
+                        posuere. Sed vel enim neque. Suspendisse feugiat, elit fringilla cursus eleifend, ante neque laoreet purus, eget tempor nisi mi a nibh. In hac habitasse platea dictumst.
+                    </p>
+
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent aliquam feugiat lacus a elementum. Vestibulum aliquam ullamcorper sem vel dignissim. Nullam accumsan ex magna, ut accumsan nibh ultricies varius. Maecenas sed sapien lorem. Quisque a orci
+                        imperdiet, euismod diam quis, volutpat tellus. Mauris aliquam arcu vel lectus placerat, ut rhoncus quam rutrum. Maecenas euismod nec nunc quis fermentum. Sed sed nibh ut orci pellentesque egestas in non lorem. Nam pharetra pulvinar
+                        posuere. Sed vel enim neque. Suspendisse feugiat, elit fringilla cursus eleifend, ante neque laoreet purus, eget tempor nisi mi a nibh. In hac habitasse platea dictumst.
+                    </p>
+
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent aliquam feugiat lacus a elementum. Vestibulum aliquam ullamcorper sem vel dignissim. Nullam accumsan ex magna, ut accumsan nibh ultricies varius. Maecenas sed sapien lorem. Quisque a orci
+                        imperdiet, euismod diam quis, volutpat tellus. Mauris aliquam arcu vel lectus placerat, ut rhoncus quam rutrum. Maecenas euismod nec nunc quis fermentum. Sed sed nibh ut orci pellentesque egestas in non lorem. Nam pharetra pulvinar
+                        posuere. Sed vel enim neque. Suspendisse feugiat, elit fringilla cursus eleifend, ante neque laoreet purus, eget tempor nisi mi a nibh. In hac habitasse platea dictumst.
+                    </p>
+                </section>
+
+                <div class="container social-media">
+                    <div class="container-left">
+                        <a class="bubble">
+                            <button class="red-bubble container">
+                                    <object type="image/svg+xml" data="../../assets/icons/iconmonstr-pinterest-3.svg" class="icon"></object>
+                                </button>
+                        </a>
+
+                        <a class="bubble">
+                            <button class="blue-a-bubble container">
+                                    <object type="image/svg+xml" data="../../assets/icons/iconmonstr-facebook-1.svg" class="icon"></object>
+                                </button>
+                        </a>
+
+                        <a class="bubble">
+                            <button class="blue-b-bubble container">
+                                    <object type="image/svg+xml" data="../../assets/icons/iconmonstr-linkedin-3.svg" class="icon"></object>
+                                </button>
+                        </a>
+
+                        <a class="bubble">
+                            <button class="blue-c-bubble container">
+                                    <object type="image/svg+xml" data="../../assets/icons/iconmonstr-twitter-1.svg" class="icon"></object>
+                                </button>
+                        </a>
+                    </div>
+
+                    <div class="container">
+                        <object type="image/svg+xml" data="../../assets/icons/share-24px.svg" id="share-icon"></object>
+
+                        <span><b>9K<br/>Shares</b></span>
+                    </div>
+                </div>
+            </di>
+
+            <div id="comments">
                 <div class="container-left">
-                
-                    <a class="card blog-post-card img-post-1" href="./blog-post-Allan-Williams-Your-First-Mobile-Application.html">
-                        <div class="card-content container">      
-                            <span class="card-text">Your First Mobile Application</span>
-                        </div>
-                    </a>
-                    
-                    <a class="card blog-post-card img-post-0" href="./blog-post-Ricardo-Schnaider-The-Web-Development-Dictionary.html">
-                        <div class="card-content container">       
-                            <span class="card-text">The Web Development Dictionary</span>
-                        </div>
-                    </a>
+                    <b id="comment-label">Comments</b>
 
-                    <a class="card blog-post-card img-post-3" href="./blog-post-Peter-Martínez-Best-Desk-Set-ups-for-Working.html">
-                        <div class="card-content container">     
-                            <span class="card-text">Best Desk Set-ups for Working</span>
-                        </div>
-                    </a>
-
-                    <object type="image/svg+xml" data="../../assets/icons/navigate_next-24px.svg" id="navigate-next-icon"></object>
-    
-                </div>
-
-            </article>
-        </main>
-
-        <footer class="footer">
-            <div id="footer-content" class="container-top footer-section">
-
-                <div class="container-top footer-section">
-                    <span>NEWEST ARTICLES</span>
-
-                    <p class="footer-paragraph">
-                        12 Essential Advantages of Java <br />
-                        How to Land Your First Web Design <br />
-                        The Best Way to Learn Development
-                        in 2020 <br />
-                        17 Typescript Projects You Can Build to
-                        Perfect Your Coding Skills
-                    </p>
-                </div>
-
-                <div class="container-top footer-section">
-                    <span>FREE CODING GUIDE</span>
-
-                    <p class="footer-paragraph">
-                        What is Coding? <br />
-                        Intro to Software Programming <br />
-                        What is Front-End and Back-End? <br />
-                        How does HTTP Work? <br />
-                        Useful Tools for Coding
-                    </p>
+                    <object type="image/svg+xml" data="../../assets/icons/arrow_drop_down-24px.svg" id="dropdown-icon"></object>
                 </div>
 
                 <div class="container-left">
-                    <object type="image/svg+xml" data="../../assets/icons/iconmonstr-facebook-1.svg" class="footer-icon"></object>
+                    <object type="image/svg+xml" data="../../assets/icons/account_circle-24px-gray.svg" class="avatar"></object>
 
-                    <object type="image/svg+xml" data="../../assets/icons/iconmonstr-linkedin-3.svg" class="footer-icon"></object>
+                    <di>
+                        <b>Anamarie Zaitz</b>
 
-                    <object type="image/svg+xml" data="../../assets/icons/iconmonstr-twitter-1.svg" class="footer-icon"></object>
+                        <p class="comment">
+                            The post is excellent, it had all the tips I was looking for. It really helped a lot and even I'm feeling now to motivated again. Thank you!
+                        </p>
+                    </di>
                 </div>
 
+                <div class="container-left">
+                    <object type="image/svg+xml" data="../../assets/icons/account_circle-24px-gray.svg" class="avatar"></object>
+
+                    <di>
+                        <b>Marggaret Stallman</b>
+
+                        <p class="comment">
+                            Very interesting, great job.
+                        </p>
+                    </di>
+                </div>
+
+                <div class="container-left">
+                    <object type="image/svg+xml" data="../../assets/icons/account_circle-24px-gray.svg" class="avatar"></object>
+
+                    <di>
+                        <b>Julia Martínez</b>
+
+                        <p class="comment">
+                            I agree in all that you mentioned in the blog post.
+                        </p>
+                    </di>
+                </div>
             </div>
 
-            <div id="footer-nav" class="container-left">
+            <h2>Related Blog Posts</h2>
 
-                <a class="footer-nav-button">ABOUT</a>
+            <div id="related-posts" class="container-left">
 
-                <a class="footer-nav-button">PERMISSIONS</a>
+                <a class="container-top card blog-post-card" href="./blog-post-Allan-Williams-Your-First-Mobile-Application.html">
+                    <img src="../../assets/images/desk-img-1.jpg" class="card-img" />
 
-                <a class="footer-nav-button">PRIVACY</a>
+                    <span class="card-content card-text">Your First Mobile Application</span>
+                </a>
 
-                <a class="footer-nav-button">CREDITS</a>
+                <a class="container-top card blog-post-card" href="./blog-post-Ricardo-Schnaider-The-Web-Development-Dictionary.html">
+                    <img src="../../assets/images/desk-img.jpg" class="card-img" />
+
+                    <span class="card-content card-text">The Web Development Dictionary</span>
+                </a>
+
+                <a class="container-top card blog-post-card" href="./blog-post-Peter-Martínez-Best-Desk-Set-ups-for-Working.html">
+                    <img src="../../assets/images/desk-img-3.jpg" class="card-img" />
+
+                    <span class="card-content card-text">Best Desk Set-ups for Working</span>
+                </a>
+
+                <object type="image/svg+xml" data="../../assets/icons/navigate_next-24px.svg" id="navigate-next-icon"></object>
 
             </div>
 
-            <hr id="line"/>
-        </footer>
-    </body>
+        </article>
+    </main>
+
+    <footer class="footer">
+        <div id="footer-content" class="container-top footer-section">
+
+            <div class="container-top footer-section">
+                <span>NEWEST ARTICLES</span>
+
+                <p class="footer-paragraph">
+                    12 Essential Advantages of Java <br /> How to Land Your First Web Design <br /> The Best Way to Learn Development in 2020 <br /> 17 Typescript Projects You Can Build to Perfect Your Coding Skills
+                </p>
+            </div>
+
+            <div class="container-top footer-section">
+                <span>FREE CODING GUIDE</span>
+
+                <p class="footer-paragraph">
+                    What is Coding? <br /> Intro to Software Programming <br /> What is Front-End and Back-End? <br /> How does HTTP Work? <br /> Useful Tools for Coding
+                </p>
+            </div>
+
+            <div class="container-left">
+                <object type="image/svg+xml" data="../../assets/icons/iconmonstr-facebook-1.svg" class="footer-icon"></object>
+
+                <object type="image/svg+xml" data="../../assets/icons/iconmonstr-linkedin-3.svg" class="footer-icon"></object>
+
+                <object type="image/svg+xml" data="../../assets/icons/iconmonstr-twitter-1.svg" class="footer-icon"></object>
+            </div>
+
+        </div>
+
+        <ul id="footer-nav" class="nav-buttons container-left">
+
+            <li class="nav-button"><a>ABOUT</a></li>
+
+            <li class="nav-button"><a>PERMISSIONS</a></li>
+
+            <li class="nav-button"><a>PRIVACY</a></li>
+
+            <li class="nav-button"><a>CREDITS</a></li>
+
+        </ul>
+
+        <hr id="line" />
+    </footer>
+</body>
+
 </html>
