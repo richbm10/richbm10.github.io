@@ -1,0 +1,39 @@
+@import "./global.css";
+@import "./theme.css";
+@import "./components/nav-bar.css";
+@import "./components/hero-slider.css";
+@import "./components/card.css";
+@import "./components/food-cards.css";
+@import "./components/branding-cards-A.css";
+@import "./components/branding-cards-B.css";
+body {
+    display: grid;
+    margin: 0;
+    grid-template-columns: 1fr 80vw 1fr;
+    grid-template-rows: 34px 1fr;
+    grid-template-areas: "nb nb nb" "main main main";
+}
+
+#main {
+    grid-area: main;
+    display: grid;
+    margin: 0;
+    grid-template-columns: 1fr 80vw 1fr;
+    grid-template-rows: 1fr;
+}
+
+#main-content {
+    grid-area: 1/2/2/3;
+}
+
+@media(min-width: 768px) {
+    body {
+        grid-template-rows: 44px 1fr;
+    }
+}
+
+@media(min-width: 1000px) {
+    body {
+        grid-template-rows: 64px 1fr;
+    }
+}

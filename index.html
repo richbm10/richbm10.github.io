@@ -4,255 +4,277 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <link rel="stylesheet" href="./app/styles/pages/blog-homepage.css" />
-    <title>Blog</title>
+    <link rel="stylesheet" href="./app/styles/index.css" />
+    <title>MAYNOOTH Restaurant</title>
 </head>
 
 <body>
-    <div class="nav-bar">
-        <div id="nav-bar-content" class="container">
-            <object type="image/svg+xml" data="./assets/images/Logo-Maynooth-Option1.svg" id="logo"></object>
+    <div id="nav-bar" class="container secondary-color">
+        <object type="image/svg+xml" data="./assets/images/Logo-Maynooth-Option1.svg" id="logo"></object>
 
-            <ul class="nav-buttons container-right">
-                <li class="nav-button"><a>ABOUT</a></li>
-                <li class="nav-button"><a href="./index.html">HOME</a></li>
-                <li class="nav-button"><a>SUBSCRIBE</a></li>
-            </ul>
-        </div>
+        <object type="image/svg+xml" data="./assets/icons/view_headline-24px.svg" id="nav-slide-button"></object>
     </div>
 
-    <div class="topbar">
-        <div id="topbar-content" class="container">
+    <main id="main" class="primary-color">
+        <div id="main-content" class="container-top">
+            <div id="hero-slider" class="container">
+                <object type="image/svg+xml" data="./assets/icons/navigate_next-24px.svg" id="next-icon-1"></object>
 
-            <div id="search" class="gray-bubble container-left">
+                <div id="hero-img">
+                    <div id="hero-progress" class="container">
+                        <div class="primary-color progress-circle"></div>
 
-                <object type="image/svg+xml" data="./assets/icons/search-24px.svg" class="topbar-icon"></object>
+                        <div class="primary-color progress-circle"></div>
 
-                <input id="search-input" type="text" placeholder="Search . . ." />
+                        <div class="primary-color progress-circle"></div>
+                    </div>
+                </div>
 
+                <object type="image/svg+xml" data="./assets/icons/navigate_next-24px.svg" id="next-icon-2"></object>
             </div>
 
-            <div id="categories" class="gray-bubble container">
+            <div class="card branding-card-A container-left fourth-color">
+                <img src="./assets/images/chef-preparing-vegetable-dish-on-tree-slab.jpg" class="branding-card-A-img" />
 
-                <span>Categories</span>
-
-                <object type="image/svg+xml" data="./assets/icons/arrow_drop_down-24px.svg" class="topbar-icon"></object>
-
+                <h2 class="branding-card-A-content container-top">We bring the buffet to your events!</h2>
             </div>
 
-        </div>
-    </div>
+            <div class="card branding-card-B card-spacing container-right fourth-color">
+                <h2 class="branding-card-B-content">Become a <span class="font-family-B font-third-color">Master Chef</span> learning with the Best Cooking Program</h2>
 
-    <main class="main">
-        <div id="main-content">
-            <div id="blog-post-cards" class="container">
+                <div class="branding-card-B-img-section container-top secondary-color">
+                    <img src="./assets/images/two-men-preparing-food.jpg" class="branding-card-B-img" />
 
-                <a class="container-top card blog-post-card" href="./app/posts/blog-post-Ricardo-Schnaider-The-Web-Development-Dictionary.html">
-                    <img src="./assets/images/desk-img.jpg" class="card-img" />
-                    <figcaption class="img-caption">Photo by Tirachard Kumtanom from Pexels</figcaption>
-
-                    <div class="card-content container-left">
-                        <object type="image/svg+xml" data="./assets/icons/account_circle-24px.svg" class="avatar"></object>
-
-                        <span class="card-text">The Web Development Dictionary | Ricardo Schnaider</span>
-                    </div>
-                </a>
-
-                <a class="container-top card blog-post-card" href="./app/posts/blog-post-Allan-Williams-Your-First-Mobile-Application.html">
-                    <img src="./assets/images/desk-img-1.jpg" class="card-img" />
-                    <figcaption class="img-caption">Photo by bongkarn thanyakij from Pexels</figcaption>
-
-                    <div class="card-content container-left">
-                        <object type="image/svg+xml" data="./assets/icons/account_circle-24px.svg" class="avatar"></object>
-
-                        <span class="card-text">Your First Mobile Application | Allan Williams</span>
-                    </div>
-                </a>
-
-                <a class="container-top card blog-post-card" href="./app/posts/blog-post-Ricardo-Schnaider-Desiging-Wireframes-for-Beginners.html">
-                    <img src="./assets/images/desk-img-2.jpg" class="card-img" />
-                    <figcaption class="img-caption">Photo by Jonathan Robles from Pexels</figcaption>
-
-                    <div class="card-content container-left">
-                        <object type="image/svg+xml" data="./assets/icons/account_circle-24px.svg" class="avatar"></object>
-
-                        <span class="card-text">Desiging Wireframes for Beginners | Ricardo Schnaider</span>
-                    </div>
-                </a>
-
-                <a class="container-top card blog-post-card" href="./app/posts/blog-post-Peter-Martínez-Best-Desk-Set-ups-for-Working.html">
-                    <img src="./assets/images/desk-img-3.jpg" class="card-img" />
-                    <figcaption class="img-caption">Photo by bongkarn thanyakij from Pexels</figcaption>
-
-                    <div class="card-content container-left">
-                        <object type="image/svg+xml" data="./assets/icons/account_circle-24px.svg" class="avatar"></object>
-
-                        <span class="card-text">Best Desk Set-ups for Working | Peter Martínez</span>
-                    </div>
-                </a>
-
-                <a class="container-top card blog-post-card" href="./app/posts/blog-post-empty-A.html">
-                    <img src="./assets/images/desk-img-4.jpg" class="card-img" />
-                    <figcaption class="img-caption">Photo by bongkarn thanyakij from Pexels</figcaption>
-
-                    <div class="card-content container-left">
-                        <object type="image/svg+xml" data="./assets/icons/account_circle-24px.svg" class="avatar"></object>
-
-                        <span class="card-text">10 Tips for staying Focused on Work | Mariana Aguilera</span>
-                    </div>
-                </a>
-
-                <a class="container-top card blog-post-card" href="./app/posts/blog-post-empty-B.html">
-                    <img src="./assets/images/desk-img-5.jpg" class="card-img" />
-                    <figcaption class="img-caption">Photo by bongkarn thanyakij from Pexels</figcaption>
-
-                    <div class="card-content container-left">
-                        <object type="image/svg+xml" data="./assets/icons/account_circle-24px.svg" class="avatar"></object>
-
-                        <span class="card-text">5 steps for a Good Morning Start | Thomas Jackson</span>
-                    </div>
-                </a>
-
-                <a class="container-top card blog-post-card" href="./app/posts/blog-post-empty-C.html">
-                    <img src="./assets/images/desk-img-6.jpg" class="card-img" />
-                    <figcaption class="img-caption">Photo by Andrea Piacquadio from Pexels</figcaption>
-
-                    <div class="card-content container-left">
-                        <object type="image/svg+xml" data="./assets/icons/account_circle-24px.svg" class="avatar"></object>
-
-                        <span class="card-text">Idenfifying Potential Clients | Megan Peterson</span>
-                    </div>
-                </a>
-
-                <a class="container-top card blog-post-card" href="./app/posts/blog-post-empty-D.html">
-                    <img src="./assets/images/desk-img-7.jpg" class="card-img" />
-                    <figcaption class="img-caption">Photo by Andrea Piacquadio from Pexels</figcaption>
-
-                    <div class="card-content container-left">
-                        <object type="image/svg+xml" data="./assets/icons/account_circle-24px.svg" class="avatar"></object>
-
-                        <span class="card-text">The Executive that Every Company Needs | Nathan Heinen</span>
-                    </div>
-                </a>
-
-                <a class="container-top card blog-post-card" href="./app/posts/blog-post-empty-E.html">
-                    <img src="./assets/images/desk-img-8.jpg" class="card-img" />
-                    <figcaption class="img-caption">Photo by Andrea Piacquadio from Pexels</figcaption>
-
-                    <div class="card-content container-left">
-                        <object type="image/svg+xml" data="./assets/icons/account_circle-24px.svg" class="avatar"></object>
-
-                        <span class="card-text">Time Management, the key for Success | Elena Beutel</span>
-                    </div>
-                </a>
-
-                <a class="container-top card blog-post-card" href="./app/posts/blog-post-empty-F.html">
-                    <img src="./assets/images/desk-img-9.jpg" class="card-img" />
-                    <figcaption class="img-caption">Photo by Polina Zimmerman from Pexels</figcaption>
-
-                    <div class="card-content container-left">
-                        <object type="image/svg+xml" data="./assets/icons/account_circle-24px.svg" class="avatar"></object>
-
-                        <span class="card-text">Tips for Upgrading your Resume | María Estrada</span>
-                    </div>
-                </a>
-
-                <a class="container-top card blog-post-card" href="./app/posts/blog-post-empty-G.html">
-                    <img src="./assets/images/desk-img-10.jpg" class="card-img" />
-                    <figcaption class="img-caption">Photo by bongkarn thanyakij from Pexels</figcaption>
-
-                    <div class="card-content container-left">
-                        <object type="image/svg+xml" data="./assets/icons/account_circle-24px.svg" class="avatar"></object>
-
-                        <span class="card-text">Trending Front End Technologies | Matthew Rogers</span>
-                    </div>
-                </a>
-
-                <a class="container-top card blog-post-card" href="./app/posts/blog-post-empty-H.html">
-                    <img src="./assets/images/desk-img-11.jpg" class="card-img" />
-                    <figcaption class="img-caption">Photo by bongkarn thanyakij from Pexels</figcaption>
-
-                    <div class="card-content container-left">
-                        <object type="image/svg+xml" data="./assets/icons/account_circle-24px.svg" class="avatar"></object>
-
-                        <span class="card-text">Design Thinking | Laura Stevens</span>
-                    </div>
-                </a>
-
-                <a class="container-top card blog-post-card" href="./app/posts/blog-post-empty-I.html">
-                    <img src="./assets/images/desk-img-12.jpg" class="card-img" />
-                    <figcaption class="img-caption">Photo by Alena Shekhovtcova from Pexels</figcaption>
-
-                    <div class="card-content container-left">
-                        <object type="image/svg+xml" data="./assets/icons/account_circle-24px.svg" class="avatar"></object>
-
-                        <span class="card-text">Increasing Morning Productivity | Richard Harrison</span>
-                    </div>
-                </a>
-
-                <a class="container-top card blog-post-card" href="./app/posts/blog-post-empty-J.html">
-                    <img src="./assets/images/desk-img-13.jpg" class="card-img" />
-                    <figcaption class="img-caption">Photo by bongkarn thanyakij from Pexels</figcaption>
-
-                    <div class="card-content container-left">
-                        <object type="image/svg+xml" data="./assets/icons/account_circle-24px.svg" class="avatar"></object>
-
-                        <span class="card-text">The Secret of Waking Up at 4:00am | Daniel Williams</span>
-                    </div>
-                </a>
+                    <p class="card-text branding-card-B-section-text font-primary-color"><i>
+                        We have been teaching our different chef's since 1982, which
+                        was when Mr. Balotelli decided to start training our own chef's.
+                        With the great experience of chef's with more than 20 years
+                        of working in the restaurant, you are going to learn the
+                        secrets for achieving the taste that have characterized
+                        Maynooth Restaurant since 1979.
+                    </i></p>
+                </div>
             </div>
 
-            <div id="next-pages" class="container-top">
-                <span>Page 1 of 13</span>
-                <span class="next-pages-text"><b>1 2 3 4 5 . . . 10 . . . >></b></span>
-                <span><b>Last >></b></span>
+
+            <div class="food-cards-section card-spacing">
+                <h2 class="cards-section-header">Entrees of the Day</h2>
+
+                <div class="container">
+                    <div class="card food-card container-top fourth-color">
+                        <img src="./assets/images/spinach-chicken-pomegranate-salad.jpg" class="food-card-img" />
+
+                        <div class="container-top food-card-content">
+                            <span class="card-text"><b>Pomegranate Salada</b></span>
+                            <span class="card-text">$21.99 - <b class="font-third-color">$17.99</b></span>
+                            <p class="card-text">
+                                Fresh salad with spinach and chicken, a good choice before a big plate of our main menu.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="card food-card container-top fourth-color">
+                        <img src="./assets/images/grilled-salmon-fish.jpg" class="food-card-img" />
+
+                        <div class="container-top food-card-content">
+                            <span class="card-text"><b>Small Piece of Grilled Salmon</b></span>
+                            <span class="card-text">$25.99 - <b class="font-third-color">$15.99</b></span>
+                            <p class="card-text">
+                                Mostly selected from our clients before ordering the 1kg Grilled Salmon of our main menu.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="card food-card container-top fourth-color">
+                        <img src="./assets/images/sliced-fruit-on-white-ceramic-plate.jpg" class="food-card-img" />
+
+                        <div class="container-top food-card-content">
+                            <span class="card-text"><b>Small Piece of Grilled Salmon</b></span>
+                            <span class="card-text">$25.99 - <b class="font-third-color">$15.99</b></span>
+                            <p class="card-text">
+                                Mostly selected from our clients before ordering the 1kg Grilled Salmon of our main menu.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="food-cards-section">
+                <h2 class="cards-section-header">Main Menu of the Day</h2>
+
+                <div class="container">
+                    <div class="card food-card container-top fourth-color">
+                        <img src="./assets/images/selective-focus-photography-of-beef-steak-with-sauce.jpg" class="food-card-img" />
+
+                        <div class="container-top food-card-content">
+                            <span class="card-text"><b>Pomegranate Salada</b></span>
+                            <span class="card-text">$21.99 - <b class="font-third-color">$17.99</b></span>
+                            <p class="card-text">
+                                Fresh salad with spinach and chicken, a good choice before a big plate of our main menu.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="card food-card container-top fourth-color">
+                        <img src="./assets/images/baked-pizza-on-pizza-peel-in-oven.jpg" class="food-card-img" />
+
+                        <div class="container-top food-card-content">
+                            <span class="card-text"><b>Small Piece of Grilled Salmon</b></span>
+                            <span class="card-text">$25.99 - <b class="font-third-color">$15.99</b></span>
+                            <p class="card-text">
+                                Mostly selected from our clients before ordering the 1kg Grilled Salmon of our main menu.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="card food-card container-top fourth-color">
+                        <img src="./assets/images/pasta-dish.jpg" class="food-card-img" />
+
+                        <div class="container-top food-card-content">
+                            <span class="card-text"><b>Small Piece of Grilled Salmon</b></span>
+                            <span class="card-text">$25.99 - <b class="font-third-color">$15.99</b></span>
+                            <p class="card-text">
+                                Mostly selected from our clients before ordering the 1kg Grilled Salmon of our main menu.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="food-cards-section">
+                <h2 class="cards-section-header">Desserts of the Day</h2>
+
+                <div class="container">
+                    <div class="card food-card container-top fourth-color">
+                        <img src="./assets/images/pastry-on-white-ceramic-plate.jpg" class="food-card-img" />
+
+                        <div class="container-top food-card-content">
+                            <span class="card-text"><b>Pomegranate Salada</b></span>
+                            <span class="card-text">$21.99 - <b class="font-third-color">$17.99</b></span>
+                            <p class="card-text">
+                                Fresh salad with spinach and chicken, a good choice before a big plate of our main menu.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="card food-card container-top fourth-color">
+                        <img src="./assets/images/sliced-white-and-pink-icing-covered-cake-on-white-plate-with.jpg" class="food-card-img" />
+
+                        <div class="container-top food-card-content">
+                            <span class="card-text"><b>Small Piece of Grilled Salmon</b></span>
+                            <span class="card-text">$25.99 - <b class="font-third-color">$15.99</b></span>
+                            <p class="card-text">
+                                Mostly selected from our clients before ordering the 1kg Grilled Salmon of our main menu.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="card food-card container-top fourth-color">
+                        <img src="./assets/images/chocolate-cake-with-cream-on-top.jpg" class="food-card-img" />
+
+                        <div class="container-top food-card-content">
+                            <span class="card-text"><b>Small Piece of Grilled Salmon</b></span>
+                            <span class="card-text">$25.99 - <b class="font-third-color">$15.99</b></span>
+                            <p class="card-text">
+                                Mostly selected from our clients before ordering the 1kg Grilled Salmon of our main menu.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card branding-card-B card-spacing container-left fourth-color">
+                <div class="branding-card-B-img-section container-top secondary-color">
+                    <img src="./assets/images/photo-of-people-standing-near-volkswagen-beetle.jpg" class="branding-card-B-img" />
+
+                    <p class="card-text branding-card-B-section-text font-primary-color"><i>
+                        The 4 Drivers are a band that have been composing country music the last
+                        2 years. Their music have spread along the USA by performing music
+                        events in bars and restaurants. Nowadays, they are traveling along
+                        Canada demonstrating their talent; so today we have them here in
+                        Maynooth Restaurant.
+                    </i></p>
+                </div>
+
+                <h2 class="container-top branding-card-B-content">Today's Music Event: <span class="font-family-B font-third-color">The 4 Drivers</span></h2>
+            </div>
+
+            <div id="social-media-card" class="card branding-card-B card-spacing container-right fourth-color">
+
+                <img src="./assets/images/apple-applications-apps-cell-phone.jpg" class="branding-card-B-img" />
+
+                <div id="social-media-branding" class="branding-card-B-img-section container-top secondary-color font-primary-color">
+                    <h2 class="branding-card-B-content">LET'S BE <span class="font-third-color"><u>SOCIAL</u></span></h2>
+
+                    <div id="social-media" class="container-left">
+                        <object type="image/svg+xml" data="./assets/icons/iconmonstr-facebook-1.svg" class="branding-card-B-icon"></object>
+
+                        <object type="image/svg+xml" data="./assets/icons/iconmonstr-linkedin-3.svg" class="branding-card-B-icon"></object>
+
+                        <object type="image/svg+xml" data="./assets/icons/iconmonstr-pinterest-3.svg" class="branding-card-B-icon"></object>
+
+                        <object type="image/svg+xml" data="./assets/icons/iconmonstr-twitter-1.svg" class="branding-card-B-icon"></object>
+                    </div>
+
+                    <h2 class="branding-card-B-content"><span class="font-family-B font-third-color">Follow us</span> & Tag your Photos</h2>
+                    <h2 class="branding-card-B-content"><span class="font-family-B font-third-color">@MayNooth</span></h2>
+                </div>
+            </div>
+
+            <div class="card-spacing">
+                <h2 class="cards-section-header">Find Us</h2>
+
+                <div class="card branding-card-A container-left fourth-color">
+                    <img src="./assets/images/person-holding-map-inside-vehicle.jpg" class="contact-map-img" />
+
+                    <div class="branding-card-A-content container-top">
+                        <span><span class="font-third-color">MAY</span>NOOTH</span>
+                        <span class="font-family-B font-third-color">Toronto, ON Canada</span>
+                        <b>Momentum Mall</b>
+                        <span>Info @maynoothtoronto.com</span>
+                        <span>Telephone +1-613-555-0120</span>
+                    </div>
+                </div>
+
+                <div class="card branding-card-A container-left fourth-color">
+                    <img src="./assets/images/person-holding-map-inside-vehicle.jpg" class="contact-map-img" />
+
+                    <div class="branding-card-A-content container-top">
+                        <span><span class="font-third-color">MAY</span>NOOTH</span>
+                        <span class="font-family-B font-third-color">Toronto, ON Canada</span>
+                        <b>Momentum Mall</b>
+                        <span>Info @maynoothtoronto.com</span>
+                        <span>Telephone +1-613-555-0120</span>
+                    </div>
+                </div>
+
+                <div class="card branding-card-A container-left fourth-color">
+                    <img src="./assets/images/person-holding-map-inside-vehicle.jpg" class="contact-map-img" />
+
+                    <div class="branding-card-A-content container-top">
+                        <span><span class="font-third-color">MAY</span>NOOTH</span>
+                        <span class="font-family-B font-third-color">Toronto, ON Canada</span>
+                        <b>Momentum Mall</b>
+                        <span>Info @maynoothtoronto.com</span>
+                        <span>Telephone +1-613-555-0120</span>
+                    </div>
+                </div>
+
+                <div class="card branding-card-A container-left fourth-color">
+                    <img src="./assets/images/person-holding-map-inside-vehicle.jpg" class="contact-map-img" />
+
+                    <div class="branding-card-A-content container-top">
+                        <span><span class="font-third-color">MAY</span>NOOTH</span>
+                        <span class="font-family-B font-third-color">Toronto, ON Canada</span>
+                        <b>Momentum Mall</b>
+                        <span>Info @maynoothtoronto.com</span>
+                        <span>Telephone +1-613-555-0120</span>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
 
-    <footer class="footer">
-        <div id="footer-content" class="container-top footer-section">
-
-            <div class="container-top footer-section">
-                <span>NEWEST ARTICLES</span>
-
-                <p class="footer-paragraph">
-                    12 Essential Advantages of Java <br /> How to Land Your First Web Design <br /> The Best Way to Learn Development in 2020 <br /> 17 Typescript Projects You Can Build to Perfect Your Coding Skills
-                </p>
-            </div>
-
-            <div class="container-top footer-section">
-                <span>FREE CODING GUIDE</span>
-
-                <p class="footer-paragraph">
-                    What is Coding? <br /> Intro to Software Programming <br /> What is Front-End and Back-End? <br /> How does HTTP Work? <br /> Useful Tools for Coding
-                </p>
-            </div>
-
-            <div class="container-left">
-                <object type="image/svg+xml" data="./assets/icons/iconmonstr-facebook-1.svg" class="footer-icon"></object>
-
-                <object type="image/svg+xml" data="./assets/icons/iconmonstr-linkedin-3.svg" class="footer-icon"></object>
-
-                <object type="image/svg+xml" data="./assets/icons/iconmonstr-twitter-1.svg" class="footer-icon"></object>
-            </div>
-
-        </div>
-
-        <ul id="footer-nav" class="nav-buttons container-left">
-
-            <li class="nav-button"><a>ABOUT</a></li>
-
-            <li class="nav-button"><a>PERMISSIONS</a></li>
-
-            <li class="nav-button"><a>PRIVACY</a></li>
-
-            <li class="nav-button"><a>CREDITS</a></li>
-
-        </ul>
-
-        <hr id="line" />
-    </footer>
 </body>
 
 </html>

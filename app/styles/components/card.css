@@ -1,24 +1,19 @@
 .card {
-    border: 1px solid #00000015;
-    box-shadow: 0px 4px 8px #000000;
-    border-radius: 10px;
+    border: 1px solid #F6F6F6;
+    box-shadow: 0px 4px 3px rgb(190, 190, 190);
+    flex: 1 0 auto;
 }
 
-.card-img {
-    height: 25vh;
-    width: 70vw;
-    align-self: center;
-    border-radius: 10px;
+.card-text {
+    font-size: 0.70em;
 }
 
-.img-caption {
-    font-style: italic;
-    align-self: center;
-    margin: 1% 0% 1% 0%;
+.card-spacing {
+    margin-top: 8%;
 }
 
-.card-content {
-    width: 70vw;
+.cards-section-header {
     position: relative;
-    bottom: 80%;
+    left: -2.5%;
+    margin-bottom: 10px;
 }
