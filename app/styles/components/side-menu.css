@@ -1,0 +1,46 @@
+.active-side-menu {
+    width: 50vw;
+}
+
+.unactive-side-menu {
+    width: 0vw;
+}
+
+.side-menu-button {
+    margin: 5% 0 5% 5%;
+    font-size: 1em;
+}
+
+.side-menu-button:hover {
+    color: #EA5643;
+    transition: 0.4s;
+}
+
+.sidemenu-break-line {
+    width: 90%;
+    color: #F9F6E5;
+}
+
+#side-menu {
+    position: absolute;
+    z-index: 1;
+    top: 31.5px;
+    right: 0;
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+    transition: 0.7s;
+    opacity: 95%;
+}
+
+@media(min-width: 768px) {
+    #side-menu {
+        top: 41.5px;
+    }
+}
+
+@media(min-width: 1000px) {
+    #side-menu {
+        top: 61.5px;
+    }
+}
