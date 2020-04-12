@@ -8,7 +8,7 @@
     <title>MAYNOOTH Restaurant</title>
 </head>
 
-<body>
+<body class="primary-color">
     <div id="nav-bar" class="container secondary-color">
         <object type="image/svg+xml" data="./assets/images/Logo-Maynooth-Option1.svg" id="logo"></object>
 
@@ -17,14 +17,17 @@
 
     <ul id="side-menu" class="unactive-side-menu secondary-color"></ul>
 
-    <main id="main" class="primary-color">
+    <main id="main">
         <div id="main-content" class="container-top">
+
+            <div id="hero-slider-break" class="sub-section-break"></div>
+
             <div id="hero-slider" class="container">
-                <object type="image/svg+xml" data="./assets/icons/navigate_next-24px.svg" id="next-icon-1"></object>
+                <img src="./assets/icons/navigate_next-24px.svg" id="next-icon-1" />
 
                 <div id="hero-img">
                     <div id="hero-progress" class="container">
-                        <div class="primary-color progress-circle"></div>
+                        <div class="third-color progress-circle"></div>
 
                         <div class="primary-color progress-circle"></div>
 
@@ -32,8 +35,10 @@
                     </div>
                 </div>
 
-                <object type="image/svg+xml" data="./assets/icons/navigate_next-24px.svg" id="next-icon-2"></object>
+                <img src="./assets/icons/navigate_next-24px.svg" id="next-icon-2" />
             </div>
+
+            <div class="sub-section-break"></div>
 
             <div class="card branding-card-A container-left fourth-color">
                 <img src="./assets/images/chef-preparing-vegetable-dish-on-tree-slab.jpg" class="branding-card-A-img" />
@@ -41,7 +46,9 @@
                 <h2 class="branding-card-A-content container-top">We bring the buffet to your events!</h2>
             </div>
 
-            <div id="cooking-program-card" class="card branding-card-B card-spacing container-right fourth-color">
+            <div id="cooking-program-break" class="section-break"></div>
+
+            <div class="card branding-card-B  container-right fourth-color">
                 <h2 class="branding-card-B-content">Become a <span class="font-family-B font-third-color">Master Chef</span> learning with the Best Cooking Program</h2>
 
                 <div class="branding-card-B-img-section container-top secondary-color">
@@ -58,135 +65,141 @@
                 </div>
             </div>
 
-            <div id="day-promotions" class="card-spacing">
-                <div class="food-cards-section">
-                    <h2 class="cards-section-header">Entrees of the Day</h2>
+            <div id="day-promotions-break" class="section-break"></div>
 
-                    <div class="container">
-                        <div class="card food-card container-top fourth-color">
-                            <img src="./assets/images/spinach-chicken-pomegranate-salad.jpg" class="food-card-img" />
+            <div class="food-cards-section">
+                <h2 class="cards-section-header">Entrees of the Day</h2>
 
-                            <div class="container-top food-card-content">
-                                <span class="card-text"><b>Pomegranate Salada</b></span>
-                                <span class="card-text">$21.99 - <b class="font-third-color">$17.99</b></span>
-                                <p class="card-text">
-                                    Fresh salad with spinach and chicken, a good choice before a big plate of our main menu.
-                                </p>
-                            </div>
-                        </div>
+                <div class="container">
+                    <div class="card food-card container-top fourth-color">
+                        <img src="./assets/images/spinach-chicken-pomegranate-salad.jpg" class="food-card-img" />
 
-                        <div class="card food-card container-top fourth-color">
-                            <img src="./assets/images/grilled-salmon-fish.jpg" class="food-card-img" />
-
-                            <div class="container-top food-card-content">
-                                <span class="card-text"><b>Small Piece of Grilled Salmon</b></span>
-                                <span class="card-text">$25.99 - <b class="font-third-color">$15.99</b></span>
-                                <p class="card-text">
-                                    Mostly selected from our clients before ordering the 1kg Grilled Salmon of our main menu.
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="card food-card container-top fourth-color">
-                            <img src="./assets/images/sliced-fruit-on-white-ceramic-plate.jpg" class="food-card-img" />
-
-                            <div class="container-top food-card-content">
-                                <span class="card-text"><b>Small Piece of Grilled Salmon</b></span>
-                                <span class="card-text">$25.99 - <b class="font-third-color">$15.99</b></span>
-                                <p class="card-text">
-                                    Mostly selected from our clients before ordering the 1kg Grilled Salmon of our main menu.
-                                </p>
-                            </div>
+                        <div class="container-top food-card-content">
+                            <span class="card-text"><b>Pomegranate Salada</b></span>
+                            <span class="card-text">$21.99 - <b class="font-third-color">$17.99</b></span>
+                            <p class="card-text">
+                                Fresh salad with spinach and chicken, a good choice before a big plate of our main menu.
+                            </p>
                         </div>
                     </div>
-                </div>
 
-                <div class="food-cards-section">
-                    <h2 class="cards-section-header">Main Menu of the Day</h2>
+                    <div class="card food-card container-top fourth-color">
+                        <img src="./assets/images/grilled-salmon-fish.jpg" class="food-card-img" />
 
-                    <div class="container">
-                        <div class="card food-card container-top fourth-color">
-                            <img src="./assets/images/selective-focus-photography-of-beef-steak-with-sauce.jpg" class="food-card-img" />
-
-                            <div class="container-top food-card-content">
-                                <span class="card-text"><b>Pomegranate Salada</b></span>
-                                <span class="card-text">$21.99 - <b class="font-third-color">$17.99</b></span>
-                                <p class="card-text">
-                                    Fresh salad with spinach and chicken, a good choice before a big plate of our main menu.
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="card food-card container-top fourth-color">
-                            <img src="./assets/images/baked-pizza-on-pizza-peel-in-oven.jpg" class="food-card-img" />
-
-                            <div class="container-top food-card-content">
-                                <span class="card-text"><b>Small Piece of Grilled Salmon</b></span>
-                                <span class="card-text">$25.99 - <b class="font-third-color">$15.99</b></span>
-                                <p class="card-text">
-                                    Mostly selected from our clients before ordering the 1kg Grilled Salmon of our main menu.
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="card food-card container-top fourth-color">
-                            <img src="./assets/images/pasta-dish.jpg" class="food-card-img" />
-
-                            <div class="container-top food-card-content">
-                                <span class="card-text"><b>Small Piece of Grilled Salmon</b></span>
-                                <span class="card-text">$25.99 - <b class="font-third-color">$15.99</b></span>
-                                <p class="card-text">
-                                    Mostly selected from our clients before ordering the 1kg Grilled Salmon of our main menu.
-                                </p>
-                            </div>
+                        <div class="container-top food-card-content">
+                            <span class="card-text"><b>Small Piece of Grilled Salmon</b></span>
+                            <span class="card-text">$25.99 - <b class="font-third-color">$15.99</b></span>
+                            <p class="card-text">
+                                Mostly selected from our clients before ordering the 1kg Grilled Salmon of our main menu.
+                            </p>
                         </div>
                     </div>
-                </div>
 
-                <div class="food-cards-section">
-                    <h2 class="cards-section-header">Desserts of the Day</h2>
+                    <div class="card food-card container-top fourth-color">
+                        <img src="./assets/images/sliced-fruit-on-white-ceramic-plate.jpg" class="food-card-img" />
 
-                    <div class="container">
-                        <div class="card food-card container-top fourth-color">
-                            <img src="./assets/images/pastry-on-white-ceramic-plate.jpg" class="food-card-img" />
-
-                            <div class="container-top food-card-content">
-                                <span class="card-text"><b>Pomegranate Salada</b></span>
-                                <span class="card-text">$21.99 - <b class="font-third-color">$17.99</b></span>
-                                <p class="card-text">
-                                    Fresh salad with spinach and chicken, a good choice before a big plate of our main menu.
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="card food-card container-top fourth-color">
-                            <img src="./assets/images/sliced-white-and-pink-icing-covered-cake-on-white-plate-with.jpg" class="food-card-img" />
-
-                            <div class="container-top food-card-content">
-                                <span class="card-text"><b>Small Piece of Grilled Salmon</b></span>
-                                <span class="card-text">$25.99 - <b class="font-third-color">$15.99</b></span>
-                                <p class="card-text">
-                                    Mostly selected from our clients before ordering the 1kg Grilled Salmon of our main menu.
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="card food-card container-top fourth-color">
-                            <img src="./assets/images/chocolate-cake-with-cream-on-top.jpg" class="food-card-img" />
-
-                            <div class="container-top food-card-content">
-                                <span class="card-text"><b>Small Piece of Grilled Salmon</b></span>
-                                <span class="card-text">$25.99 - <b class="font-third-color">$15.99</b></span>
-                                <p class="card-text">
-                                    Mostly selected from our clients before ordering the 1kg Grilled Salmon of our main menu.
-                                </p>
-                            </div>
+                        <div class="container-top food-card-content">
+                            <span class="card-text"><b>Small Piece of Grilled Salmon</b></span>
+                            <span class="card-text">$25.99 - <b class="font-third-color">$15.99</b></span>
+                            <p class="card-text">
+                                Mostly selected from our clients before ordering the 1kg Grilled Salmon of our main menu.
+                            </p>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div id="day-event-card" class="card branding-card-B card-spacing container-left fourth-color">
+            <div class="sub-section-break"></div>
+
+            <div class="food-cards-section">
+                <h2 class="cards-section-header">Main Menu of the Day</h2>
+
+                <div class="container">
+                    <div class="card food-card container-top fourth-color">
+                        <img src="./assets/images/selective-focus-photography-of-beef-steak-with-sauce.jpg" class="food-card-img" />
+
+                        <div class="container-top food-card-content">
+                            <span class="card-text"><b>Pomegranate Salada</b></span>
+                            <span class="card-text">$21.99 - <b class="font-third-color">$17.99</b></span>
+                            <p class="card-text">
+                                Fresh salad with spinach and chicken, a good choice before a big plate of our main menu.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="card food-card container-top fourth-color">
+                        <img src="./assets/images/baked-pizza-on-pizza-peel-in-oven.jpg" class="food-card-img" />
+
+                        <div class="container-top food-card-content">
+                            <span class="card-text"><b>Small Piece of Grilled Salmon</b></span>
+                            <span class="card-text">$25.99 - <b class="font-third-color">$15.99</b></span>
+                            <p class="card-text">
+                                Mostly selected from our clients before ordering the 1kg Grilled Salmon of our main menu.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="card food-card container-top fourth-color">
+                        <img src="./assets/images/pasta-dish.jpg" class="food-card-img" />
+
+                        <div class="container-top food-card-content">
+                            <span class="card-text"><b>Small Piece of Grilled Salmon</b></span>
+                            <span class="card-text">$25.99 - <b class="font-third-color">$15.99</b></span>
+                            <p class="card-text">
+                                Mostly selected from our clients before ordering the 1kg Grilled Salmon of our main menu.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sub-section-break"></div>
+
+            <div class="food-cards-section">
+                <h2 class="cards-section-header">Desserts of the Day</h2>
+
+                <div class="container">
+                    <div class="card food-card container-top fourth-color">
+                        <img src="./assets/images/pastry-on-white-ceramic-plate.jpg" class="food-card-img" />
+
+                        <div class="container-top food-card-content">
+                            <span class="card-text"><b>Pomegranate Salada</b></span>
+                            <span class="card-text">$21.99 - <b class="font-third-color">$17.99</b></span>
+                            <p class="card-text">
+                                Fresh salad with spinach and chicken, a good choice before a big plate of our main menu.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="card food-card container-top fourth-color">
+                        <img src="./assets/images/sliced-white-and-pink-icing-covered-cake-on-white-plate-with.jpg" class="food-card-img" />
+
+                        <div class="container-top food-card-content">
+                            <span class="card-text"><b>Small Piece of Grilled Salmon</b></span>
+                            <span class="card-text">$25.99 - <b class="font-third-color">$15.99</b></span>
+                            <p class="card-text">
+                                Mostly selected from our clients before ordering the 1kg Grilled Salmon of our main menu.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="card food-card container-top fourth-color">
+                        <img src="./assets/images/chocolate-cake-with-cream-on-top.jpg" class="food-card-img" />
+
+                        <div class="container-top food-card-content">
+                            <span class="card-text"><b>Small Piece of Grilled Salmon</b></span>
+                            <span class="card-text">$25.99 - <b class="font-third-color">$15.99</b></span>
+                            <p class="card-text">
+                                Mostly selected from our clients before ordering the 1kg Grilled Salmon of our main menu.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="day-event-break" class="section-break"></div>
+
+            <div class="card branding-card-B container-left fourth-color">
                 <div class="branding-card-B-img-section container-top secondary-color">
                     <img src="./assets/images/photo-of-people-standing-near-volkswagen-beetle.jpg" class="branding-card-B-img" />
 
@@ -202,7 +215,9 @@
                 <h2 class="container-top branding-card-B-content">Today's Music Event: <span class="font-family-B font-third-color">The 4 Drivers</span></h2>
             </div>
 
-            <div id="social-media-card" class="card branding-card-B card-spacing container-right fourth-color">
+            <div id="social-media-break" class="section-break"></div>
+
+            <div id="social-media-card" class="card branding-card-B container-right fourth-color">
 
                 <img src="./assets/images/apple-applications-apps-cell-phone.jpg" class="branding-card-B-img" />
 
@@ -224,57 +239,65 @@
                 </div>
             </div>
 
-            <div id="find-us" class="card-spacing">
-                <h2 class="cards-section-header">Find Us</h2>
+            <div id="find-us-break" class="section-break"></div>
 
-                <div class="card branding-card-A container-left fourth-color">
-                    <img src="./assets/images/person-holding-map-inside-vehicle.jpg" class="contact-map-img" />
+            <h2 class="cards-section-header">Find Us</h2>
 
-                    <div class="branding-card-A-content container-top">
-                        <span><span class="font-third-color">MAY</span>NOOTH</span>
-                        <span class="font-family-B font-third-color">Toronto, ON Canada</span>
-                        <b>Momentum Mall</b>
-                        <span>Info @maynoothtoronto.com</span>
-                        <span>Telephone +1-613-555-0120</span>
-                    </div>
-                </div>
+            <div class="card branding-card-A container-left fourth-color">
+                <img src="./assets/images/person-holding-map-inside-vehicle.jpg" class="contact-map-img" />
 
-                <div class="card branding-card-A container-left fourth-color">
-                    <img src="./assets/images/person-holding-map-inside-vehicle.jpg" class="contact-map-img" />
-
-                    <div class="branding-card-A-content container-top">
-                        <span><span class="font-third-color">MAY</span>NOOTH</span>
-                        <span class="font-family-B font-third-color">Toronto, ON Canada</span>
-                        <b>Momentum Mall</b>
-                        <span>Info @maynoothtoronto.com</span>
-                        <span>Telephone +1-613-555-0120</span>
-                    </div>
-                </div>
-
-                <div class="card branding-card-A container-left fourth-color">
-                    <img src="./assets/images/person-holding-map-inside-vehicle.jpg" class="contact-map-img" />
-
-                    <div class="branding-card-A-content container-top">
-                        <span><span class="font-third-color">MAY</span>NOOTH</span>
-                        <span class="font-family-B font-third-color">Toronto, ON Canada</span>
-                        <b>Momentum Mall</b>
-                        <span>Info @maynoothtoronto.com</span>
-                        <span>Telephone +1-613-555-0120</span>
-                    </div>
-                </div>
-
-                <div class="card branding-card-A container-left fourth-color">
-                    <img src="./assets/images/person-holding-map-inside-vehicle.jpg" class="contact-map-img" />
-
-                    <div class="branding-card-A-content container-top">
-                        <span><span class="font-third-color">MAY</span>NOOTH</span>
-                        <span class="font-family-B font-third-color">Toronto, ON Canada</span>
-                        <b>Momentum Mall</b>
-                        <span>Info @maynoothtoronto.com</span>
-                        <span>Telephone +1-613-555-0120</span>
-                    </div>
+                <div class="branding-card-A-content container-top">
+                    <span><span class="font-third-color">MAY</span>NOOTH</span>
+                    <span class="font-family-B font-third-color">Toronto, ON Canada</span>
+                    <b>Momentum Mall</b>
+                    <span>Info @maynoothtoronto.com</span>
+                    <span>Telephone +1-613-555-0120</span>
                 </div>
             </div>
+
+            <div class="sub-section-break"></div>
+
+            <div class="card branding-card-A container-left fourth-color">
+                <img src="./assets/images/person-holding-map-inside-vehicle.jpg" class="contact-map-img" />
+
+                <div class="branding-card-A-content container-top">
+                    <span><span class="font-third-color">MAY</span>NOOTH</span>
+                    <span class="font-family-B font-third-color">Toronto, ON Canada</span>
+                    <b>Momentum Mall</b>
+                    <span>Info @maynoothtoronto.com</span>
+                    <span>Telephone +1-613-555-0120</span>
+                </div>
+            </div>
+
+            <div class="sub-section-break"></div>
+
+            <div class="card branding-card-A container-left fourth-color">
+                <img src="./assets/images/person-holding-map-inside-vehicle.jpg" class="contact-map-img" />
+
+                <div class="branding-card-A-content container-top">
+                    <span><span class="font-third-color">MAY</span>NOOTH</span>
+                    <span class="font-family-B font-third-color">Toronto, ON Canada</span>
+                    <b>Momentum Mall</b>
+                    <span>Info @maynoothtoronto.com</span>
+                    <span>Telephone +1-613-555-0120</span>
+                </div>
+            </div>
+
+            <div class="sub-section-break"></div>
+
+            <div class="card branding-card-A container-left fourth-color">
+                <img src="./assets/images/person-holding-map-inside-vehicle.jpg" class="contact-map-img" />
+
+                <div class="branding-card-A-content container-top">
+                    <span><span class="font-third-color">MAY</span>NOOTH</span>
+                    <span class="font-family-B font-third-color">Toronto, ON Canada</span>
+                    <b>Momentum Mall</b>
+                    <span>Info @maynoothtoronto.com</span>
+                    <span>Telephone +1-613-555-0120</span>
+                </div>
+            </div>
+
+            <div class="section-break"></div>
         </div>
     </main>
     <script src="./app/app.js"></script>

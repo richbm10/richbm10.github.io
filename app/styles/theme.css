@@ -36,12 +36,22 @@ h2 {
     color: #333333;
 }
 
+.third-color {
+    background-color: #EA5643;
+}
+
 .font-third-color {
     color: #EA5643;
 }
 
 .fourth-color {
     background-color: #F6F6F6;
+}
+
+.active-section {
+    height: 3px;
+    background-color: #333333;
+    transition: 4s;
 }
 
 @media(min-width: 375px) {
