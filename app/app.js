@@ -149,27 +149,46 @@ function setHeroSliderListeners() {
     setInterval(nextHeroImage, 10000);
 }
 
+/*
+Process: adds the active state class to the side menu, and removes the unactive state.
+This causes a smooth transition of the reight menu from left to right.
+*/
+function deactivateSideMenu(sideMenuClassList) {
+    if (sideMenuClassList.contains('active-side-menu')) {
+        sideMenuClassList.remove('active-side-menu');
+        sideMenuClassList.add('unactive-side-menu');
+    }
+}
+
+/*
+Process: adds the click listener to the nav bar button for sliding the side menu,
+which indeed is for activating or unactivating the side menu.
+*/
 function setNavSlideButtonListener(sideMenuClassList) {
     document.querySelector('#nav-slide-button').addEventListener('click', function() {
         if (sideMenuClassList.contains('unactive-side-menu')) {
             sideMenuClassList.remove('unactive-side-menu');
             sideMenuClassList.add('active-side-menu');
-        } else if (sideMenuClassList.contains('active-side-menu')) {
-            sideMenuClassList.remove('active-side-menu');
-            sideMenuClassList.add('unactive-side-menu');
+        } else {
+            deactivateSideMenu(sideMenuClassList);
         }
     });
 }
 
-function setMainLayoutListeners(sideMenuClassList) {
+/*
+Process: deactivates or hides the side menu when the user clicks the main layout of the application.
+*/
+function setMainLayoutListeners(sideMenu) {
     document.querySelector('#main').addEventListener('click', function() {
-        if (sideMenuClassList.contains('active-side-menu')) {
-            sideMenuClassList.remove('active-side-menu');
-            sideMenuClassList.add('unactive-side-menu');
-        }
+        deactivateSideMenu(sideMenu.classList);
     });
 }
 
+/* 
+Process:
+    Shows the nav bar if the user scrolls down.
+    Hides the nav bar if the user scrolls up.
+*/
 function moveNavBar(navBar) {
     let st = window.pageYOffset || document.documentElement.scrollTop; // Credits: "https://github.com/qeremy/so/blob/master/so.dom.js#L426"
     if (st > lastScrollTop) {
@@ -185,7 +204,10 @@ function moveNavBar(navBar) {
     lastScrollTop = st <= 0 ? 0 : st; // For Mobile or negative scrolling
 }
 
-function buildScrollTopButton() {
+/*
+Process: dynamically creates the scroll top button, setting the different attributes to the DOM elements of the button.
+*/
+function createScrollTopButton() {
     scrollTopButton = document.createElement('a');
     scrollTopButton.classList.add('secondary-color');
     scrollTopButton.setAttribute('id', 'scroll-top-button');
@@ -201,9 +223,17 @@ function buildScrollTopButton() {
     return scrollTopButton;
 }
 
-function setDocumentListeners(navBar, sections, scrollTopButton) {
+/*
+Process: calls the respective functions when the user scrolls in the application.
+    - deactivates or hides the side menu.
+    - moves the nav bar up or down depending of the scroll direction.
+    - activates the DOM sections that are on the user viewport.
+    - hides or shows the scroll top button, if the user scrolls the page fold or not respectively.
+*/
+function setDocumentListeners(sideMenu, navBar, sections, scrollTopButton) {
     // element should be replaced with the actual target element on which you have applied scroll, use window in case of no target element.
     document.addEventListener('scroll', function() { // or window.addEventListener("scroll"....
+        deactivateSideMenu(sideMenu.classList);
         moveNavBar(navBar);
         setActiveSections(sections);
         if (isPageFoldScrolled()) {
@@ -214,13 +244,18 @@ function setDocumentListeners(navBar, sections, scrollTopButton) {
     });
 }
 
+/*
+Process: hides the side menu after the user selects a menu option.
+*/
 function setMenuElementListener(sideMenuClassList, menuElement) {
     menuElement.addEventListener('click', function() {
-        sideMenuClassList.remove('active-side-menu');
-        sideMenuClassList.add('unactive-side-menu');
+        deactivateSideMenu(sideMenuClassList);
     });
 }
 
+/* 
+Process: dynamically creates a menu option and appends it to the side menu.
+*/
 function createSideMenuElement(sideMenu, menuElement) {
     const listItem = document.createElement('li');
     listItem.classList.add('side-menu-button');
@@ -235,8 +270,11 @@ function createSideMenuElement(sideMenu, menuElement) {
     sideMenu.appendChild(listItem);
 }
 
-function buildSideMenu() {
-    const sideMenu = document.querySelector('#side-menu');
+/*
+Process: builds up the DOM side menu element, by dynamically adding all the different
+menu options based on the different sections on the page.
+*/
+function buildSideMenu(sideMenu) {
 
     const menuElements = [{
             name: 'Start',
@@ -274,21 +312,23 @@ function buildSideMenu() {
     }
 
     setNavSlideButtonListener(sideMenu.classList);
-
-    return sideMenu;
 }
 
+/*
+    Process: executes all the JavaScript functions until the DOM has finally loaded by the rendering process.
+*/
 document.addEventListener('DOMContentLoaded', function() {
     const navBar = document.querySelector('#nav-bar');
     const sections = document.querySelectorAll('.section-break');
-    const scrollTopButton = buildScrollTopButton();
-    const sideMenu = buildSideMenu();
+    const sideMenu = document.querySelector('#side-menu');
+    buildSideMenu(sideMenu);
+    const scrollTopButton = createScrollTopButton();
 
     setHeroSliderListeners();
 
     setActiveSections(sections);
 
-    setMainLayoutListeners(sideMenu.classList);
+    setMainLayoutListeners(sideMenu);
 
-    setDocumentListeners(navBar, sections, scrollTopButton);
+    setDocumentListeners(sideMenu, navBar, sections, scrollTopButton);
 });
