@@ -18,3 +18,6 @@ Page Sections:
 
 Objective:
 Implement a landing page for displaying important branding content of the Maynooth Restaurant.
+
+Credits:
+All images were taken from pexels.com
