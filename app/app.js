@@ -6,6 +6,11 @@ const heroSliderImages = ['assets/images/group-of-people-gathering-inside-bar.jp
     'assets/images/clear-wine-glass-on-table.jpg'
 ];
 
+/* 
+Input: HTML element
+Process: calculates the vertical current position of the element.
+Output: the position of the element.
+*/
 function posY(elm) {
     var test = elm,
         top = 0;
@@ -18,6 +23,10 @@ function posY(elm) {
     return top;
 }
 
+/*
+Process: calculates the viewport height in the current device running the application.
+Output: the viewport height
+*/
 function viewPortHeight() {
     var de = document.documentElement;
 
@@ -26,11 +35,22 @@ function viewPortHeight() {
     return 0;
 }
 
+/* 
+Process: calculates how much the user has vertical scrolled.
+Output: the total scrolled.
+*/
 function scrollY() {
     if (window.pageYOffset) { return window.pageYOffset; }
     return Math.max(document.documentElement.scrollTop, document.body.scrollTop);
 }
 
+/* 
+Input: a HTML element
+Output:
+    - true: if the element is visible in the viewport. 
+    - false: if the element is not visible in the viewport.
+
+*/
 function isVisible(elm) {
     let vpH = viewPortHeight(), // Viewport Height
         st = scrollY(), // Scroll Top
@@ -39,12 +59,23 @@ function isVisible(elm) {
     return !(y < (vpH + st) && (y > st));
 }
 
+/* 
+Output:
+    - true: if the user has scrolled the page fold.
+    - false: if the user hasn't scrolled the page fold.
+*/
 function isPageFoldScrolled() {
     let vpH = viewPortHeight(), // Viewport Height
         st = scrollY(); // Scroll Top
     return (st > vpH);
 }
 
+/* 
+Input: the different section break elements in the DOM
+Process: for each section element, if the element is visible for
+the user, then the active class is added to it, so the section
+can be clearly visible.
+*/
 function setActiveSections(sections) {
     for (section of sections) {
         if (isVisible(section)) {
@@ -55,6 +86,12 @@ function setActiveSections(sections) {
     }
 }
 
+/*
+Process: from all the progress circle elements in the DOM; changes the color
+of the circle associated to the current active image in the hero slider.
+The color is changed, by removing the actual color of the circle, and adding
+a: primary or third CSS class color from the theme.
+*/
 function changeProgressCircleColor() {
     const progressCircleClassList = (document.querySelectorAll('.progress-circle')[activeHeroSliderImage]).classList;
     if (progressCircleClassList.contains('primary-color')) {
@@ -66,11 +103,17 @@ function changeProgressCircleColor() {
     }
 }
 
+/*
+Process: places a new image in the hero slider, and activates the respective progress circle.
+*/
 function changeHeroImage() {
     document.querySelector('#hero-img').style.backgroundImage = `url(${heroSliderImages[activeHeroSliderImage]})`;
     changeProgressCircleColor(activeHeroSliderImage);
 }
 
+/* 
+Process: places the next image in the hero slider based on the actual progress
+*/
 function nextHeroImage() {
     changeProgressCircleColor();
     if (activeHeroSliderImage < (heroSliderImages.length - 1)) {
@@ -81,6 +124,9 @@ function nextHeroImage() {
     changeHeroImage();
 }
 
+/* 
+Process: places the previous image in the hero slider based on the actual progress
+*/
 function previousHeroImage() {
     changeProgressCircleColor();
     if (activeHeroSliderImage > 0) {
@@ -91,6 +137,10 @@ function previousHeroImage() {
     changeHeroImage();
 }
 
+/* 
+Process: sets the click listeners for the next and previous buttons of the hero
+slider; and defines a time interval for automatically change the current image.
+*/
 function setHeroSliderListeners() {
     document.querySelector('#next-icon-1').addEventListener('click', previousHeroImage);
 
