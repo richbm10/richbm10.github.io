@@ -15,6 +15,11 @@
     align-self: center;
 }
 
+#hero-slider-break {
+    position: relative;
+    top: -2%;
+}
+
 #next-icon-1,
 #next-icon-2 {
     width: 30px;

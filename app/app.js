@@ -32,15 +32,20 @@ function scrollY() {
 }
 
 function isVisible(elm) {
-    var vpH = viewPortHeight(), // Viewport Height
+    let vpH = viewPortHeight(), // Viewport Height
         st = scrollY(), // Scroll Top
         y = posY(elm);
 
     return !(y < (vpH + st) && (y > st));
 }
 
-function setActiveSections() {
-    const sections = document.querySelectorAll('.section-break');
+function isPageFoldScrolled() {
+    let vpH = viewPortHeight(), // Viewport Height
+        st = scrollY(); // Scroll Top
+    return (st > vpH);
+}
+
+function setActiveSections(sections) {
     for (section of sections) {
         if (isVisible(section)) {
             section.classList.remove('active-section');
@@ -50,8 +55,8 @@ function setActiveSections() {
     }
 }
 
-function changeProgressCircleColor(progressCircle) {
-    const progressCircleClassList = (document.querySelectorAll('.progress-circle')[progressCircle]).classList;
+function changeProgressCircleColor() {
+    const progressCircleClassList = (document.querySelectorAll('.progress-circle')[activeHeroSliderImage]).classList;
     if (progressCircleClassList.contains('primary-color')) {
         progressCircleClassList.remove('primary-color');
         progressCircleClassList.add('third-color');
@@ -66,24 +71,35 @@ function changeHeroImage() {
     changeProgressCircleColor(activeHeroSliderImage);
 }
 
-function setHeroSliderEventListeners() {
-    document.querySelector('#next-icon-1').addEventListener('click', function() {
-        if (activeHeroSliderImage > 0) {
-            changeProgressCircleColor(activeHeroSliderImage);
-            activeHeroSliderImage -= 1;
-            changeHeroImage();
-        }
-    });
-    document.querySelector('#next-icon-2').addEventListener('click', function() {
-        if (activeHeroSliderImage < (heroSliderImages.length - 1)) {
-            changeProgressCircleColor(activeHeroSliderImage);
-            activeHeroSliderImage += 1;
-            changeHeroImage();
-        }
-    });
+function nextHeroImage() {
+    changeProgressCircleColor();
+    if (activeHeroSliderImage < (heroSliderImages.length - 1)) {
+        activeHeroSliderImage += 1;
+    } else {
+        activeHeroSliderImage = 0;
+    }
+    changeHeroImage();
 }
 
-function setSideMenuEventListeners(sideMenuClassList) {
+function previousHeroImage() {
+    changeProgressCircleColor();
+    if (activeHeroSliderImage > 0) {
+        activeHeroSliderImage -= 1;
+    } else {
+        activeHeroSliderImage = heroSliderImages.length - 1;
+    }
+    changeHeroImage();
+}
+
+function setHeroSliderListeners() {
+    document.querySelector('#next-icon-1').addEventListener('click', previousHeroImage);
+
+    document.querySelector('#next-icon-2').addEventListener('click', nextHeroImage);
+
+    setInterval(nextHeroImage, 10000);
+}
+
+function setNavSlideButtonListener(sideMenuClassList) {
     document.querySelector('#nav-slide-button').addEventListener('click', function() {
         if (sideMenuClassList.contains('unactive-side-menu')) {
             sideMenuClassList.remove('unactive-side-menu');
@@ -95,7 +111,7 @@ function setSideMenuEventListeners(sideMenuClassList) {
     });
 }
 
-function setMainLayoutEventListeners(sideMenuClassList) {
+function setMainLayoutListeners(sideMenuClassList) {
     document.querySelector('#main').addEventListener('click', function() {
         if (sideMenuClassList.contains('active-side-menu')) {
             sideMenuClassList.remove('active-side-menu');
@@ -104,23 +120,47 @@ function setMainLayoutEventListeners(sideMenuClassList) {
     });
 }
 
-function setDocumentEventListeners() {
+function moveNavBar(navBar) {
+    let st = window.pageYOffset || document.documentElement.scrollTop; // Credits: "https://github.com/qeremy/so/blob/master/so.dom.js#L426"
+    if (st > lastScrollTop) {
+        // downscroll code
+        navBar.style.top = '0px';
+    } else {
+        // upscroll code
+        navBar.style.top = '-65px';
+    }
+    if (st === 0) {
+        navBar.style.top = '0px';
+    }
+    lastScrollTop = st <= 0 ? 0 : st; // For Mobile or negative scrolling
+}
+
+function buildScrollTopButton() {
+    scrollTopButton = document.createElement('a');
+    scrollTopButton.classList.add('secondary-color');
+    scrollTopButton.setAttribute('id', 'scroll-top-button');
+    scrollTopButton.setAttribute('href', '#hero-slider-break');
+
+    scrollTopIcon = document.createElement('img');
+    scrollTopIcon.setAttribute('src', 'assets/icons/arrow_drop_up-24px.svg');
+    scrollTopIcon.setAttribute('id', 'scroll-top-icon');
+
+    scrollTopButton.appendChild(scrollTopIcon);
+    document.body.appendChild(scrollTopButton);
+
+    return scrollTopButton;
+}
+
+function setDocumentListeners(navBar, sections, scrollTopButton) {
     // element should be replaced with the actual target element on which you have applied scroll, use window in case of no target element.
     document.addEventListener('scroll', function() { // or window.addEventListener("scroll"....
-        let st = window.pageYOffset || document.documentElement.scrollTop; // Credits: "https://github.com/qeremy/so/blob/master/so.dom.js#L426"
-        const navBar = document.querySelector('#nav-bar');
-        if (st > lastScrollTop) {
-            // downscroll code
-            navBar.style.top = '0px';
+        moveNavBar(navBar);
+        setActiveSections(sections);
+        if (isPageFoldScrolled()) {
+            scrollTopButton.style.left = '1.5%';
         } else {
-            // upscroll code
-            navBar.style.top = '-65px';
+            scrollTopButton.style.left = '-10%';
         }
-        if (st === 0) {
-            navBar.style.top = '0px';
-        }
-        lastScrollTop = st <= 0 ? 0 : st; // For Mobile or negative scrolling
-        setActiveSections();
     });
 }
 
@@ -145,7 +185,9 @@ function createSideMenuElement(sideMenu, menuElement) {
     sideMenu.appendChild(listItem);
 }
 
-function buildSideMenu(sideMenu) {
+function buildSideMenu() {
+    const sideMenu = document.querySelector('#side-menu');
+
     const menuElements = [{
             name: 'Start',
             reference: '#hero-slider-break'
@@ -180,18 +222,23 @@ function buildSideMenu(sideMenu) {
         sideMenu.appendChild(breakLine);
         createSideMenuElement(sideMenu, menuElements[i]);
     }
+
+    setNavSlideButtonListener(sideMenu.classList);
+
+    return sideMenu;
 }
 
 document.addEventListener('DOMContentLoaded', function() {
-    setDocumentEventListeners();
+    const navBar = document.querySelector('#nav-bar');
+    const sections = document.querySelectorAll('.section-break');
+    const scrollTopButton = buildScrollTopButton();
+    const sideMenu = buildSideMenu();
 
-    setHeroSliderEventListeners();
+    setHeroSliderListeners();
 
-    const sideMenu = document.querySelector('#side-menu');
-    buildSideMenu(sideMenu);
-    setSideMenuEventListeners(sideMenu.classList);
+    setActiveSections(sections);
 
-    setMainLayoutEventListeners(sideMenu.classList);
+    setMainLayoutListeners(sideMenu.classList);
 
-    setActiveSections();
+    setDocumentListeners(navBar, sections, scrollTopButton);
 });

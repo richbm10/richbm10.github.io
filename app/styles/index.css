@@ -7,6 +7,7 @@
 @import "./components/food-cards.css";
 @import "./components/branding-cards-A.css";
 @import "./components/branding-cards-B.css";
+@import "./components/scroll-top-button.css";
 html {
     scroll-behavior: smooth;
 }
