@@ -48,9 +48,11 @@ const WeatherServicesSingleton = (function() {
                     queryAddWeatherFeelings: '/weather/post/addWeatherFeelings',
                     handleResponse: function(response, callBack) {
                         response.cod = `${response.cod}`;
-                        this.weatherData = response;
                         switch (true) {
                             case response.cod >= '200' && response.cod < '300':
+                                if ('weather' in response) {
+                                    this.weatherData = response;
+                                }
                                 callBack();
                                 break;
                             case response.cod >= '400' && response.cod < '500':
@@ -71,7 +73,7 @@ webServices.set('&appid=be40e6c98cb3c7bdec82f9dbba07c905', 'http://api.openweath
 
 //Dynamic HTML
 
-const iconsPath = './website/assets/icons/';
+const iconsPath = './assets/icons/';
 const icons = {
     'Snow': 'snow.svg',
     'Rain': 'water.svg',
