@@ -1,0 +1,37 @@
+.card {
+    border: 1px solid #00B1FF;
+    border-radius: 2.10vh;
+}
+
+.pipe {
+    border-left: 1px solid #ffffff;
+    height: 4vh;
+}
+
+.row-line {
+    border-top: 1px solid #ffffff;
+    width: 15vw;
+    margin: 1.5vh 5vw;
+}
+
+.weather-card-icon {
+    width: 12vw;
+    height: 6vh;
+    margin-right: 2vw;
+}
+
+.weather-card {
+    width: 80vw;
+    padding: 2% 0 2% 0;
+    margin-top: 3vh;
+    justify-content: space-evenly;
+}
+
+.weather-card-row {
+    width: 70vw;
+    justify-content: space-between;
+}
+
+.weather-card.weather-card-simple {
+    width: 65vw;
+}

@@ -1,0 +1,33 @@
+.alert-label {
+    grid-area: label;
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.active-alert {
+    left: 10%;
+}
+
+.unactive-alert {
+    left: -100%;
+}
+
+#alert {
+    position: fixed;
+    z-index: 1;
+    top: 40%;
+    display: grid;
+    grid-template-columns: 73vw;
+    grid-template-rows: 10vh 7vh;
+    grid-template-areas: "label" "close";
+    transition: 0.7s;
+    padding: 3%;
+}
+
+#alert-close {
+    grid-area: close;
+    position: relative;
+    top: 25%;
+}

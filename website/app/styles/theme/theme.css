@@ -1,0 +1,65 @@
+span {
+    font-size: 0.85em;
+}
+
+h1 {
+    margin: 0;
+    font-size: 3.5em;
+}
+
+.base-font {
+    font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+    font-size: 16px;
+    color: #FFFFFF;
+}
+
+.base-font::placeholder {
+    color: #FFFFFF;
+}
+
+.primary-color {
+    background-color: #3EC4FF;
+}
+
+.secondary-color {
+    background-color: #00B1FF;
+}
+
+.third-color {
+    background-color: #1BC861;
+}
+
+.fourth-color {
+    background-color: #CB516E;
+}
+
+.fifth-color {
+    background-color: rgb(59, 96, 216);
+}
+
+
+/* Phones (width 375px and up) */
+
+@media only screen and (min-width: 375px) {
+    .base-font {
+        font-size: 18px;
+    }
+}
+
+
+/* Small tablets and large phones (width 600px and up) */
+
+@media only screen and (min-width: 600px) {
+    .base-font {
+        font-size: 26px;
+    }
+}
+
+
+/* Devices (width 900px and up) */
+
+@media only screen and (min-width: 900px) {
+    .base-font {
+        font-size: 42px;
+    }
+}
