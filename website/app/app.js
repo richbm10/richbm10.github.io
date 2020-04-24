@@ -101,7 +101,7 @@ webServices.set('&appid=be40e6c98cb3c7bdec82f9dbba07c905', 'https://api.openweat
 
 //Dynamic HTML
 
-const iconsPath = './assets/icons/';
+const iconsPath = './website/assets/icons/';
 const icons = {
     'Snow': 'snow.svg',
     'Rain': 'water.svg',
